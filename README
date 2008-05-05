@@ -1,0 +1,52 @@
+WHAT IS THIS PROJECT
+====================
+
+This project is to collect and improve the documentation for the "buildout"
+tool in a form suitable for delivery via the website buildout.zope.org.  That
+documentation is in the form of reStructuredText and relies upon the "sphinx"
+tool to process it into HTML while automatically producing cross-references,
+indices and such.
+
+WHERE ARE THE SOURCE DOCUMENTS?
+===============================
+
+  source/
+
+The Sphinx tool relies upon a "table of contents tree" to organize the various
+source documents into a comprehensive whole.  This tree is specified in a
+source document with the "toctree::" directive.  The topmost or master
+document, as specified in source/conf.py, is source/index.rst.  All source
+documents must end with the .rst filename extension.
+
+Note that all documents under the source/ tree must appear in some *toctree*
+directive and Sphinx wille emit a warning at document build time if this is
+not so.
+
+
+HOW DO I CONFIGURE THE CONVERSION PROCESS?
+==========================================
+
+  source/
+    conf.py
+
+
+WHERE ARE THE DELIVERABLE HTML DOCUMENTS?
+=========================================
+
+  build/
+    html/
+      index.html
+
+
+HOW IS THE HTML STYLING CONTROLLED?
+===================================
+
+The CSS stylesheet to be used is "default.css" which is located ???.
+
+
+WHO ARE THE ORGANIZERS OF THIS PROJECT?
+=======================================
+
+ - Jeff Rush
+ - Baiju
+ - ???
