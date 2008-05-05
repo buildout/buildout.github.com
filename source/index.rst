@@ -2,6 +2,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+   Q: To whom should the copyright for the website be assigned?
+
+.. toctree::
+
+   about
+   docs/index
+   recipes/index
+
 Buildout
 ========
 
