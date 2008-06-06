@@ -23,6 +23,16 @@ may refer to such an instance of the application informally as "a Foo
 buildout".
 
 
+Download
+--------
+
+To install buildout just run::
+
+  easy_install zc.buildout
+
+or you can get it from from `PyPI buildout page
+<http://pypi.python.org/pypi/zc.buildout>`_
+
 Maling list
 -----------
 

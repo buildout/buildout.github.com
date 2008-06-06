@@ -1,26 +1,19 @@
-.. Buildout documentation master file, created by sphinx-quickstart on Tue Apr 29 11:06:32 2008.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Buildout documentation master file, created by sphinx-quickstart on
+   Tue Apr 29 11:06:32 2008.  You can adapt this file completely to
+   your liking, but it should at least contain the root `toctree`
+   directive.
 
    Q: To whom should the copyright for the website be assigned?
-
-.. toctree::
-
-   about
-   docs/index
-   recipes/index
+   A: Zope Foundation or Jim Fulton  --baiju
 
 Buildout
 ========
 
- - `About <about.html>`_
+.. toctree::
 
- - `Documentation <docs/index.html>`_
-
- - `Download <download.html>`_
-
- - `Recipes <recipes/index.html>`_
-
+   about/index
+   docs/index
+   recipes/index
 
 What is Buildout ?
 ------------------
@@ -48,11 +41,3 @@ Features
   - Python-based
 
   - Can use with virtualenv
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
