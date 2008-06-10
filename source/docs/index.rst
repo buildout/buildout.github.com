@@ -5,6 +5,4 @@ Buildout Documentation
 
  - `Tutorial <tutorial.html>`_
 
- - `Reference manual <manual.html>`_
-
  - `Howto create a recipe <recipe.html>`_
