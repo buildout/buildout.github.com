@@ -1,6 +1,6 @@
-===========================
-Introduction to zc.buildout
-===========================
+=================
+Buildout Tutorial
+=================
 
 Jim Fulton, Zope Corporation
 

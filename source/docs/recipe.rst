@@ -1,5 +1,5 @@
-Recipes
-=======
+Creating Recipes
+================
 
 A Buildout part is created by a recipe.  Recipes are always installed
 as Python eggs.  They can be downloaded from a package server, such as
