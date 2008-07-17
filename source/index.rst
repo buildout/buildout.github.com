@@ -15,8 +15,8 @@ Buildout
    docs/index
    recipes/index
 
-What is Buildout ?
-------------------
+What is Buildout?
+-----------------
 
 Buildout is a system for managing development buildouts. While often
 identified as a Zope project, and indeed licensed under the ZPL by
