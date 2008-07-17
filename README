@@ -41,7 +41,8 @@ WHERE ARE THE DELIVERABLE HTML DOCUMENTS?
 HOW IS THE HTML STYLING CONTROLLED?
 ===================================
 
-The CSS stylesheet to be used is "default.css" which is located ???.
+The CSS stylesheet to be used is "default.css" and it comes from Sphinx, but
+can be overriden by dropping a file under source/_static/.
 
 
 WHO ARE THE ORGANIZERS OF THIS PROJECT?
