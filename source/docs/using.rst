@@ -1,8 +1,8 @@
 Using a Buildout
 ================
 
-Buildout helps to setup an isolated working environment for packages.
-Using Buildout you can control dependencies and its version used.
+Buildout helps to set up an isolated working environment for packages.
+Using Buildout you can control dependencies and their versions used.
 Buildout provides a single command (buildout) with few sub-commands
 and options to manage a project buildout.  You can install Buildout
 using easy_install::
@@ -23,7 +23,7 @@ project.
   $ python bootstrap.py
   $ ./bin/buildout
 
-If buildout is aleady installed just run `buildout` command.
+If buildout is already installed just run `buildout` command.
 
 ::
 
