@@ -19,7 +19,7 @@ document, as specified in source/conf.py, is source/index.rst.  All source
 documents must end with the .rst filename extension.
 
 Note that all documents under the source/ tree must appear in some *toctree*
-directive and Sphinx wille emit a warning at document build time if this is
+directive and Sphinx will emit a warning at document build time if this is
 not so.
 
 
