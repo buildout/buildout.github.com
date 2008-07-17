@@ -44,8 +44,8 @@ You can send your queries to `distutils-sig`_ mailing list.
 Source code
 -----------
 
-The source code is mainatained in Zope subversion repository.  To
-checkout the trunk::
+The source code is maintained in the Zope subversion repository.  To
+check out the trunk::
 
   svn co  svn://svn.zope.org/repos/main/zc.buildout/trunk zc.buildout
 
@@ -63,7 +63,7 @@ We have an IRC channel `#buildout` at freenode.net .
 Issue tracker
 -------------
 
-Bugs and other issues are tacked at Launchpad_.  Feel free to submit
+Bugs and other issues are tracked at Launchpad_.  Feel free to submit
 issues.
 
 .. _Launchpad: https://bugs.launchpad.net/zc.buildout/
