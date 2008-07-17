@@ -28,16 +28,16 @@ Python.
 Features
 --------
 
-  - Coarse-grained python-based configuration-driven build tool
+- Coarse-grained python-based configuration-driven build tool
 
-  - Tool for working with eggs
+- Tool for working with eggs
 
-  - Repeatable
+- Repeatable
 
-  - Configuration driven
+- Configuration driven
 
-  - Developer oriented
+- Developer oriented
 
-  - Python-based
+- Python-based
 
-  - Can use with virtualenv
+- Can use with virtualenv
