@@ -33,10 +33,10 @@ To install buildout just run::
 or you can get it from from `PyPI buildout page
 <http://pypi.python.org/pypi/zc.buildout>`_
 
-Maling list
------------
+Mailing list
+------------
 
-You can send your queries to `distutils-sig`_ mailing list.
+You can send your queries to the `distutils-sig`_ mailing list.
 
 .. _distutils-sig: http://mail.python.org/mailman/listinfo/distutils-sig
 
