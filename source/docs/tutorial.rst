@@ -54,7 +54,7 @@ Python-based
 
 - make is an awful scripting language
 
-  - uses shell 
+  - uses shell
 
   - non-portable
 
@@ -100,9 +100,9 @@ Working with eggs
 
     - always look for most recent versions by default
 
-      
+
          When upgrading a distribution, ``easy_install`` doesn't upgrade
-         dependencies, 
+         dependencies,
 
     - support for custom build options
 
@@ -120,7 +120,7 @@ Working with eggs
      load the develop egg in preference to the non-develop egg.
 
      (``easy_install`` gives preference to released eggs of the same
-     version.) 
+     version.)
 
      When I'm done making my change, I make a new egg release and tell
      buildout to stop using a develop egg.
@@ -142,7 +142,7 @@ zc.buildout current status
      maintain and reuse.
 
      Two years ago, we created a prototype Python-based buildout
-     system. 
+     system.
 
      ``zc.buildout`` is a non-prototype system that reflects
      experience using the prototype.
@@ -203,14 +203,14 @@ Egg jargon
      Platform dependent eggs contain built extension modules and are
      thus tied to a specific operating system.  In addition, they may
      depend on build options that aren't reflected in the egg name.
-  
+
 - develop egg links
 
 
      Develop egg links (aka develop eggs) are special files that allow
      a source directory to be treated as an egg.  An egg links is a
      file containing the path of a source directory.
-  
+
 - requirements
 
 
@@ -268,7 +268,7 @@ Entry points
 
        Buildout allows more control over script generation.
        Initialization code and entry point arguments can be
-       specified. 
+       specified.
 
 
 Buildout overview
@@ -289,15 +289,15 @@ Buildout overview
 
 
        Although it is possible and common to factor into multiple
-       files. 
+       files.
 
 - Specify a set of "parts"
 
   - recipe
- 
+
   - configuration data
 
-  
+
      Each part is defined by a recipe, which is Python software for
      installing or uninstalling the part, and data used by the recipe.
 
@@ -308,7 +308,7 @@ Buildout overview
 
      If a part's recipe or configuration changes, it is uninstalled
      and reinstalled.
-     
+
 
 Buildout overview (continued)
 =============================
@@ -362,7 +362,7 @@ Quick intro
 
      It is conventional to put a README.txt in the root of the
      project. distutils used to complain if this wasn't available.
-  
+
 - ``bootstrap.py`` for bootstrapping buildout
 
 
@@ -375,7 +375,7 @@ zope.event buildout.cfg
 =======================
 
 ::
-  
+
   [buildout]
   parts = test
   develop = .
@@ -475,32 +475,32 @@ Buildout steps
     bin/buildout setup . egg_info -rbdev sdist register upload
 
 
-     Buildout accepts a number of commands, one of which is
-     ``setup``.  The ``setup`` command takes a directory name and runs
-     the setup script found there.  It arranges for setuptools to be
-     imported before the script runs. This causes setuptools defined
-     commands to work even for distributions that don't use
-     setuptools.
+Buildout accepts a number of commands, one of which is
+``setup``.  The ``setup`` command takes a directory name and runs
+the setup script found there.  It arranges for setuptools to be
+imported before the script runs. This causes setuptools defined
+commands to work even for distributions that don't use
+setuptools.
 
-     The sdist, register, upload, bdist_egg, and egg_info commands are
-     setuptools and distutils defined commands.
+The sdist, register, upload, bdist_egg, and egg_info commands are
+setuptools and distutils defined commands.
 
-     The sdist command causes a source distribution to be created.
+The sdist command causes a source distribution to be created.
 
-     The register command causes a release to be registered with PyPI
-     and the upload command uploads the generated distribution.
-     You'll need to have an account on PyPI for this to work, but
-     these commands will actually help you set an account up.
+The register command causes a release to be registered with PyPI
+and the upload command uploads the generated distribution.
+You'll need to have an account on PyPI for this to work, but
+these commands will actually help you set an account up.
 
-     The bdist_egg command generates an egg.
+The bdist_egg command generates an egg.
 
-     The egg_info command allows control of egg meta-data.  The -r
-     option to the egg_info command causes the distribution to have a
-     version number that includes the subversion revision number of
-     the project.  The -b option specified a revision tag. Here we
-     specified a revision tag of "dev", which marks the release as a
-     development release. These are useful when making development
-     releases.
+The egg_info command allows control of egg meta-data.  The -r
+option to the egg_info command causes the distribution to have a
+version number that includes the subversion revision number of
+the project.  The -b option specified a revision tag. Here we
+specified a revision tag of "dev", which marks the release as a
+development release. These are useful when making development
+releases.
 
 Exercise 1
 ===========
@@ -550,7 +550,7 @@ buildout layout
 
    Some people find the buildout layout surprising, as it isn't
    similar to a Unix directory layout.  The buildout layout was guided
-   by "shallow is better than nested".  
+   by "shallow is better than nested".
 
    If you prefer a different layout, you can specify a different
    layout using buildout options.  You can set these options globally
@@ -570,7 +570,7 @@ Common buildout use cases
 
   - workingenv usually better
 
-  - buildout better when custom 
+  - buildout better when custom
     build options needed
 
 - Installing egg-based scripts for personal use
@@ -600,14 +600,14 @@ A Minimal/Develop ``setup.py``
        )
 
 
-   If we're only going to use a package as a develop egg, we just need
-   to specify the project name, and, if there is a separate source
-   directory, then we need to specify that location.
+If we're only going to use a package as a develop egg, we just need
+to specify the project name, and, if there is a separate source
+directory, then we need to specify that location.
 
-   We'd also need to specify entry points if we had any.  We'll see an
-   example of that later.
+We'd also need to specify entry points if we had any.  We'll see an
+example of that later.
 
-   See the setuptools and distutils documentation for more information.
+See the setuptools and distutils documentation for more information.
 
 Distributable ``setup.py``
 ==========================
@@ -631,27 +631,27 @@ Distributable ``setup.py``
       )
 
 
-   If we want to be able to create a distribution, then we need to
-   specify a lot more information.
+If we want to be able to create a distribution, then we need to
+specify a lot more information.
 
-   The options used are documented in either the distutils or
-   setuptools documentation. Most of the options are fairly obvious.
+The options used are documented in either the distutils or
+setuptools documentation. Most of the options are fairly obvious.
 
-   We have to specify the Python packages used. The ``find_packages``
-   function can figure this out for us, although it would often be
-   easy to specify it ourselves.  For example, we could have
-   specified::
+We have to specify the Python packages used. The ``find_packages``
+function can figure this out for us, although it would often be
+easy to specify it ourselves.  For example, we could have
+specified::
 
       packages=['zope', 'zope.event'],
 
-   The zope package is a namespace package.  This means that it exists
-   solely as a container for other packages. It doesn't have any files
-   or modules of it's own.  It only contains an `__init__` module
-   with::
+The zope package is a namespace package.  This means that it exists
+solely as a container for other packages. It doesn't have any files
+or modules of it's own.  It only contains an `__init__` module
+with::
 
      pkg_resources.declare_namespace(__name__)
 
-   or, perhaps::
+or, perhaps::
 
      # this is a namespace package
      try:
@@ -661,17 +661,17 @@ Distributable ``setup.py``
          import pkgutil
          __path__ = pkgutil.extend_path(__path__, __name__)
 
-   Namespace packages have to be declared, as we've done here.
-  
-   We always want to include package data.
+Namespace packages have to be declared, as we've done here.
 
-   Because the `__init__` module uses setuptools, we declare it as a
-   dependency, using ``install_requires``.
+We always want to include package data.
 
-   We always want to specify whether a package is zip safe.  A zip
-   safe package doesn't try to access the package as a directory.  If
-   in doubt, specify False.  If you don't specify anything, setuptools
-   will guess.
+Because the `__init__` module uses setuptools, we declare it as a
+dependency, using ``install_requires``.
+
+We always want to specify whether a package is zip safe.  A zip
+safe package doesn't try to access the package as a directory.  If
+in doubt, specify False.  If you don't specify anything, setuptools
+will guess.
 
 Polished ``setup.py`` (1/3)
 ===========================
@@ -758,13 +758,13 @@ Extras
 
 
 
-   Extras provide a way to help manage dependencies.
+Extras provide a way to help manage dependencies.
 
-   A common use of extras is to separate test dependencies from normal
-   dependencies.  A package may provide other optional features that
-   cause other dependencies.  For example, the zcml module in
-   zope.component adds lots of dependencies that we don't want to
-   impose on people that don't use it.
+A common use of extras is to separate test dependencies from normal
+dependencies.  A package may provide other optional features that
+cause other dependencies.  For example, the zcml module in
+zope.component adds lots of dependencies that we don't want to
+impose on people that don't use it.
 
 ``zc.recipe.egg``
 =================
@@ -796,12 +796,12 @@ Installing eggs
          zope.event
 
 
-   The eggs option accepts one or more distribution requirements.
-   Because requirements may contain spaces, each requirement must be
-   on a separate line.  We used the eggs option to specify the eggs we
-   want.
+The eggs option accepts one or more distribution requirements.
+Because requirements may contain spaces, each requirement must be
+on a separate line.  We used the eggs option to specify the eggs we
+want.
 
-   Any dependencies of the named eggs will also be installed.
+Any dependencies of the named eggs will also be installed.
 
 
 Installing scripts
@@ -817,13 +817,13 @@ Installing scripts
   eggs = zc.rst2
 
 
-   If any of the named eggs have ``console_script`` entry
-   points, then scripts will be generated for the entry points.
+If any of the named eggs have ``console_script`` entry
+points, then scripts will be generated for the entry points.
 
-   If a distribution doesn't use setuptools, it may not declare it's
-   entry points. In that case, you can specify entry points in the
-   recipe data.
-  
+If a distribution doesn't use setuptools, it may not declare it's
+entry points. In that case, you can specify entry points in the
+recipe data.
+
 Script initialization
 =====================
 
@@ -836,26 +836,26 @@ Script initialization
 
   [rst2]
   recipe = zc.recipe.egg
-  eggs = zc.rst2 
+  eggs = zc.rst2
          codeblock
-  initialization = 
+  initialization =
       sys.argv[1:1] = (
         's5 '
         '--stylesheet ${buildout:directory}/zope/docutils.css '
-        '--theme-url file://${buildout:directory}/zope' 
+        '--theme-url file://${buildout:directory}/zope'
         ).split()
   scripts = rst2=s5
 
 
-   In this example, we omitted the recipe entry point entry name
-   because the scripts recipe is the default recipe for the
-   zc.recipe.egg egg.
+In this example, we omitted the recipe entry point entry name
+because the scripts recipe is the default recipe for the
+zc.recipe.egg egg.
 
-   The initialization option lets us specify some Python code to be included.
+The initialization option lets us specify some Python code to be included.
 
-   We can control which scripts get installed and what their names are
-   with the scripts option. In this example, we've used the scripts
-   option to request a script named ``s5`` from the ``rst2`` entry point.
+We can control which scripts get installed and what their names are
+with the scripts option. In this example, we've used the scripts
+option to request a script named ``s5`` from the ``rst2`` entry point.
 
 Custom interpreters
 ===================
@@ -875,12 +875,12 @@ The script recipe allows an interpreter script to be created.
 This will cause a ``bin/py`` script to created.
 
 
-   Custom interpreters can be used to get an interactive Python prompt
-   with the specified eggs and and their dependencies on ``sys.path``.
-   
-   You can also use custom interpreters to run scripts, just like you
-   would with the usual Python interpreter.  Just call the interpreter
-   with the script path and arguments, if any.
+Custom interpreters can be used to get an interactive Python prompt
+with the specified eggs and and their dependencies on ``sys.path``.
+
+You can also use custom interpreters to run scripts, just like you
+would with the usual Python interpreter.  Just call the interpreter
+with the script path and arguments, if any.
 
 Exercise 2
 ==========
@@ -910,16 +910,16 @@ Custom egg building
   rpath = ${spreadtoolkit:location}/lib
 
 
-   Sometimes a distribution has extension modules that need to be
-   compiled with special options, such as the location of include
-   files and libraries,  The custom recipe supports this.  The
-   resulting eggs are placed in the develop-eggs directory because the
-   eggs are buildout specific.
+Sometimes a distribution has extension modules that need to be
+compiled with special options, such as the location of include
+files and libraries,  The custom recipe supports this.  The
+resulting eggs are placed in the develop-eggs directory because the
+eggs are buildout specific.
 
-   This example illustrates use of the zc.recipe.cmmi recipe with
-   supports installation of software that uses configure, make, make install.
-   Here, we used the recipe to install the spread toolkit, which is
-   installed in the parts directory.
+This example illustrates use of the zc.recipe.cmmi recipe with
+supports installation of software that uses configure, make, make install.
+Here, we used the recipe to install the spread toolkit, which is
+installed in the parts directory.
 
 Part dependencies
 =================
@@ -934,10 +934,10 @@ Part dependencies
 
 
 
-   In the previous example, we used the spread toolkit location in the
-   spreadmodule part definition. This reference was sufficient to make
-   the spreadtoolkit part a dependency of the spreadmodule part and
-   cause it to be installed first.
+In the previous example, we used the spread toolkit location in the
+spreadmodule part definition. This reference was sufficient to make
+the spreadtoolkit part a dependency of the spreadmodule part and
+cause it to be installed first.
 
 Custom develop eggs
 ===================
@@ -953,9 +953,9 @@ Custom develop eggs
   define = ZODB_64BIT_INTS
 
 
-   We can also specify custom build options for develop eggs.  Here we
-   used a develop egg just to make sure our custom build of ZODB took
-   precedence over normal ZODB eggs in our shared eggs directory.
+We can also specify custom build options for develop eggs.  Here we
+used a develop egg just to make sure our custom build of ZODB took
+precedence over normal ZODB eggs in our shared eggs directory.
 
 Writing recipes
 ===============
@@ -976,7 +976,7 @@ Writing recipes
          configuration has changed when deciding if a part has to
          be reinstalled.  When a part is reinstalled, it is
          uninstalled and then installed.
-      
+
     - install
 
 
@@ -995,7 +995,7 @@ Writing recipes
          and it's configuration hasn't changed from previous
          buildouts.  It can return None or a sequence of paths. If
          paths are returned, they are added to the set of installed
-         paths. 
+         paths.
 
   - uninstall
 
@@ -1029,15 +1029,15 @@ Install Recipes
               raise zc.buildout.UserError('Invalid Path')
 
 
-   - The path option in our recipe is interpreted relative to the
-     buildout. We reflect this by saving the adjusted path in the
-     options.
+- The path option in our recipe is interpreted relative to the
+  buildout. We reflect this by saving the adjusted path in the
+  options.
 
-   - If there is a user error, we:
+- If there is a user error, we:
 
-     - Log error details using the Python logger module.
+  - Log error details using the Python logger module.
 
-     - Raise a zc.buildout.UserError exception.
+  - Raise a zc.buildout.UserError exception.
 
 ``mkdirrecipe``.py continued
 ============================
@@ -1055,9 +1055,9 @@ Install Recipes
             pass
 
 
-   A well-written recipe will log what it's doing.
+A well-written recipe will log what it's doing.
 
-   Often the update method is empty, as in this case.
+Often the update method is empty, as in this case.
 
 Uninstall recipes
 =================
@@ -1069,23 +1069,23 @@ Uninstall recipes
    import os
 
    class Service:
-   
+
        def __init__(self, buildout, name, options):
            self.options = options
-   
+
        def install(self):
-           os.system("chkconfig --add %s" % self.options['script'])         
+           os.system("chkconfig --add %s" % self.options['script'])
            return ()
-   
+
        def update(self):
            pass
-   
+
    def uninstall_service(name, options):
        os.system("chkconfig --del %s" % options['script'])
 
 
-   Uninstall recipes are callables that are passed the part name and
-   the **original options**.
+Uninstall recipes are callables that are passed the part name and
+the **original options**.
 
 Buildout entry points
 =====================
@@ -1107,7 +1107,7 @@ Buildout entry points
    """
 
    setup(name='recipes', entry_points=entry_points)
-   
+
 Exercise 3
 ==========
 
@@ -1131,19 +1131,19 @@ Buildout command-line:
   bin/buildout -U -c rpm.cfg install zrs
 
 
-   Option settings are of the form::
+Option settings are of the form::
 
      section:option=value
 
-   Any option you can set in the configuration file, you can set on
-   the command-line. Option settings specified on the command line
-   override settings read from configuration files.
+Any option you can set in the configuration file, you can set on
+the command-line. Option settings specified on the command line
+override settings read from configuration files.
 
-   There are a few command-line options, like -c to specify a
-   configuration file, or -U to disable reading user defaults.
+There are a few command-line options, like -c to specify a
+configuration file, or -U to disable reading user defaults.
 
-   See the buildout documentation, or use the -h option to get a list
-   of available options.
+See the buildout documentation, or use the -h option to get a list
+of available options.
 
 Buildout modes
 ==============
@@ -1163,14 +1163,14 @@ Buildout modes
   - If enabled, turn off with -o or buildout offline option set to false.
 
 
-   By default, buildout always tries to find the newest distributions
-   that match requirements. Looking for new distributions can be very
-   time consuming.  Many people will want to specify the -N option to
-   disable this.  We'll see later how we can change this default
-   behavior.
+By default, buildout always tries to find the newest distributions
+that match requirements. Looking for new distributions can be very
+time consuming.  Many people will want to specify the -N option to
+disable this.  We'll see later how we can change this default
+behavior.
 
-   If you aren't connected to a network, you'll want to use the
-   offline mode, -o.
+If you aren't connected to a network, you'll want to use the
+offline mode, -o.
 
 ``~/.buildout/default.cfg``
 ===========================
@@ -1192,32 +1192,32 @@ Provides default buildout settings (unless -U option is used):
     executabe = /usr/local/python/2.5/bin/python
 
 
-   Unless the -U command-line option is used, user default settings
-   are read before reading regular configuration files.  The user
-   defaults are read from the default.cfg file in the .buildout
-   subdirectory of the directory specified in the HOME environment
-   variable, if any.
+Unless the -U command-line option is used, user default settings
+are read before reading regular configuration files.  The user
+defaults are read from the default.cfg file in the .buildout
+subdirectory of the directory specified in the HOME environment
+variable, if any.
 
-   In this example:
+In this example:
 
-   - I set up a shared eggs directory.
+- I set up a shared eggs directory.
 
-   - I changed the default mode to non-newest so that buildout doesn't
-     look for new distributions if the distributions it has meet it's
-     requirements.  To get the newest distributions, I'll have to use
-     the -n option.
+- I changed the default mode to non-newest so that buildout doesn't
+  look for new distributions if the distributions it has meet it's
+  requirements.  To get the newest distributions, I'll have to use
+  the -n option.
 
-   - I've specified Python 2.4 and 2.5 sections that specify locations
-     of Python interpreters.  Sometimes, a buildout uses multiple
-     versions of Python. Many recipes accept a python option that
-     specifies the name of a section with an executable option
-     specifying the location of a Python interpreter.
+- I've specified Python 2.4 and 2.5 sections that specify locations
+  of Python interpreters.  Sometimes, a buildout uses multiple
+  versions of Python. Many recipes accept a python option that
+  specifies the name of a section with an executable option
+  specifying the location of a Python interpreter.
 
 Extending configurations
 ========================
 
 The ``extends`` option allows one configuration file to extend
-another. 
+another.
 
 For example:
 
@@ -1270,30 +1270,30 @@ Example: ~/bin directory
 
 
 
-   Many people have a personal scripts directory.
+Many people have a personal scripts directory.
 
-   I've converted mine to a buildout using a buildout configuration
-   like the one above.
+I've converted mine to a buildout using a buildout configuration
+like the one above.
 
-   I've overridden the bin-directory location so that scripts are
-   installed directly into the buildout directory.
+I've overridden the bin-directory location so that scripts are
+installed directly into the buildout directory.
 
-   I've specified that I want the zc.rst2 distribution installed.  The
-   rst2 distribution has a generalized version of the restructured
-   text processing scripts in a form that can be installed by buildout
-   (or easy_install).
+I've specified that I want the zc.rst2 distribution installed.  The
+rst2 distribution has a generalized version of the restructured
+text processing scripts in a form that can be installed by buildout
+(or easy_install).
 
-   I've specified that I want buildout scripts for Python 2.4 and
-   2.5. (In my buildout, I also create one for Python 2.3.)  These
-   buildout scripts allow me to quickly bootstrap buildouts or to run
-   setup files for a given version of python.  For example, to
-   bootstrap a buildout with Python 2.4, I'll run::
+I've specified that I want buildout scripts for Python 2.4 and
+2.5. (In my buildout, I also create one for Python 2.3.)  These
+buildout scripts allow me to quickly bootstrap buildouts or to run
+setup files for a given version of python.  For example, to
+bootstrap a buildout with Python 2.4, I'll run::
 
-     buildout24 bootstrap
+  buildout24 bootstrap
 
-   in the directory containing the buildout.  This can also be used to
-   convert a directory to a buildout, creating a buildout.cfg file is
-   it doesn't exist.
+in the directory containing the buildout.  This can also be used to
+convert a directory to a buildout, creating a buildout.cfg file is
+it doesn't exist.
 
 Example: zc.sharing (1/2)
 =========================
@@ -1301,7 +1301,7 @@ Example: zc.sharing (1/2)
 ::
 
   [buildout]
-  develop = . zc.security 
+  develop = . zc.security
   parts = instance test
   find-links = http://download.zope.org/distribution/
 
@@ -1310,7 +1310,7 @@ Example: zc.sharing (1/2)
   database = data
   user = jim:123
   eggs = zc.sharing
-  zcml = 
+  zcml =
     zc.resourcelibrary zc.resourcelibrary-meta
     zc.sharing-overrides:configure.zcml zc.sharing-meta
     zc.sharing:privs.zcml zc.sharing:zope.manager-admin.zcml
@@ -1318,26 +1318,26 @@ Example: zc.sharing (1/2)
     zope.app.authentication
 
 
-   This is a small example of the "system assembly" use case.  In this
-   case, we define a Zope 3 instance, and a test script.
+This is a small example of the "system assembly" use case.  In this
+case, we define a Zope 3 instance, and a test script.
 
-   You can largely ignore the details of the Zope 3 instance  recipe.
-   If you aren't a Zope user, you don't care.  If you are a Zope user,
-   you should be aware that much better recipes have been developped. 
+You can largely ignore the details of the Zope 3 instance  recipe.
+If you aren't a Zope user, you don't care.  If you are a Zope user,
+you should be aware that much better recipes have been developped.
 
-   This project uses multiple source directories, the current
-   directory and the zc.security directory, which is a subversion
-   external to a project without its own distribution. We've listed
-   both in the develop option.
+This project uses multiple source directories, the current
+directory and the zc.security directory, which is a subversion
+external to a project without its own distribution. We've listed
+both in the develop option.
 
-   We've requested the instance and test parts.  We'll get other parts
-   installed due to dependencies of the instance part.  In particular,
-   we'll get a Zope 3 checkout because the instance recipe refers to
-   the zope3 part.  We'll get a database part because of the reference
-   in the database option of the instance recipe.
+We've requested the instance and test parts.  We'll get other parts
+installed due to dependencies of the instance part.  In particular,
+we'll get a Zope 3 checkout because the instance recipe refers to
+the zope3 part.  We'll get a database part because of the reference
+in the database option of the instance recipe.
 
-   The buildout will look for distributions at
-   http://download.zope.org/distribution/. 
+The buildout will look for distributions at
+http://download.zope.org/distribution/.
 
 Example: zc.sharing (2/2)
 =========================
@@ -1354,21 +1354,21 @@ Example: zc.sharing (2/2)
   [test]
   recipe = zc.recipe.testrunner
   defaults = ['--tests-pattern', 'f?tests$']
-  eggs = zc.sharing 
+  eggs = zc.sharing
          zc.security
   extra-paths = ${zope3:location}/src
 
 
-   Here we see the definition of the remaining parts.
+Here we see the definition of the remaining parts.
 
-   The test part has some options we haven't seen before.
+The test part has some options we haven't seen before.
 
-   - We've customized the way the testrunner finds tests by providing
-     some testrunner default arguments.
+- We've customized the way the testrunner finds tests by providing
+  some testrunner default arguments.
 
-   - We've used the extra-paths option to tell the test runner to
-     include the Zope 3 checkout source directory in sys.path.  This
-     is not necessary as Zope 3 is now available entirely as eggs.
+- We've used the extra-paths option to tell the test runner to
+  include the Zope 3 checkout source directory in sys.path.  This
+  is not necessary as Zope 3 is now available entirely as eggs.
 
 Source vs Binary
 ================
@@ -1387,10 +1387,10 @@ Source vs Binary
 - Binary eggs can go rotten when system libraries are upgraded
 
 
-     Recently, I had to manually remove eggs from my shared eggs
-     directory.  I had installed an operating system upgrade that
-     caused the names of open-ssl library files to change.  Eggs build
-     against the old libraries no-longer functioned. 
+Recently, I had to manually remove eggs from my shared eggs
+directory.  I had installed an operating system upgrade that
+caused the names of open-ssl library files to change.  Eggs build
+against the old libraries no-longer functioned.
 
 
 RPM experiments
@@ -1400,7 +1400,7 @@ Initial work creating RPMs for deployment in our hosting environment:
 
 - Separation of software and configuration
 
-- Buildout used to create rpm containing software 
+- Buildout used to create rpm containing software
 
 - Later, the installed buildout is used to set up specific processes
 
@@ -1409,12 +1409,12 @@ Initial work creating RPMs for deployment in our hosting environment:
   - Uses network configuration server
 
 
-   Our philosophy is to separate software and configuration.  We
-   install software using RPMs. Later, we configure the use of the
-   software using a centralized configuration database.
+Our philosophy is to separate software and configuration.  We
+install software using RPMs. Later, we configure the use of the
+software using a centralized configuration database.
 
-   I'll briefly present the RPM building process below.  This is
-   interesting, in part, because it illustrates some interesting issues.
+I'll briefly present the RPM building process below.  This is
+interesting, in part, because it illustrates some interesting issues.
 
 
 ZRS spec file (1/3)
@@ -1440,33 +1440,33 @@ ZRS spec file (1/3)
   AutoReqProv: no
 
 
-   Most of the options above are pretty run of the mill.
+Most of the options above are pretty run of the mill.
 
-   We specify the Python that we're going to use as a dependency.  We
-   build our Python RPMs so we can control what's in them.  System
-   packagers tend to be too creative for us.
+We specify the Python that we're going to use as a dependency.  We
+build our Python RPMs so we can control what's in them.  System
+packagers tend to be too creative for us.
 
-   Normally, RPM installs files in their run-time locations at build
-   time. This is undesirable in a number of ways.  I used the rpm
-   build-root mechanism to allow files to be build in a temporary
-   tree.
+Normally, RPM installs files in their run-time locations at build
+time. This is undesirable in a number of ways.  I used the rpm
+build-root mechanism to allow files to be build in a temporary
+tree.
 
-   Because the build location is different than the final install
-   location, paths written by the buildout, such as egg paths in
-   scripts are wrong.  There are a couple of ways to deal with this:
+Because the build location is different than the final install
+location, paths written by the buildout, such as egg paths in
+scripts are wrong.  There are a couple of ways to deal with this:
 
-   - I could try to adjust the paths at build time, 
+- I could try to adjust the paths at build time,
 
-   - I could try to adjust the paths at install time.
+- I could try to adjust the paths at install time.
 
-   Adjusting the paths at build time means that the install locations
-   can;'t be controlled at install time.  It would also add complexity
-   to all recipes that deal with paths.  Adjusting the paths at
-   install time simply requires rerunning some of the recipes to
-   generate the paths.
+Adjusting the paths at build time means that the install locations
+can;'t be controlled at install time.  It would also add complexity
+to all recipes that deal with paths.  Adjusting the paths at
+install time simply requires rerunning some of the recipes to
+generate the paths.
 
-   To reinforce the decision to allow paths to be specified at install
-   time, we've made the RPM relocatable using the prefix option.
+To reinforce the decision to allow paths to be specified at install
+time, we've made the RPM relocatable using the prefix option.
 
 ZRS spec file (2/3)
 ===================
@@ -1490,28 +1490,28 @@ ZRS spec file (2/3)
      bootstrap:recipe=zc.rebootstrap
 
 
-   I'm not an RPM expert and RPM experts would probably cringe to see
-   my spec file.  RPM specifies a number of build steps that I've
-   collapsed into one.
+I'm not an RPM expert and RPM experts would probably cringe to see
+my spec file.  RPM specifies a number of build steps that I've
+collapsed into one.
 
-   - The first few lines set up build root.
+- The first few lines set up build root.
 
-   - We export the buildout into the build root.
+- We export the buildout into the build root.
 
-   - We run the buildout
+- We run the buildout
 
-     - The -U option is used mainly to avoid using a shared eggs
-       directory
+  - The -U option is used mainly to avoid using a shared eggs
+    directory
 
-     - The -c option is used to specify an RPM-specific buildout file
-       that installs just software, including recipe eggs that will be
-       needed after installation for configuration.
+  - The -c option is used to specify an RPM-specific buildout file
+    that installs just software, including recipe eggs that will be
+    needed after installation for configuration.
 
-     - We suppress creation of an .installed.cfg file
+  - We suppress creation of an .installed.cfg file
 
-     - We specify a recipe for a special bootstrap part. The bootstrap
-       part is a script that will adjust the paths in the buildout
-       script after installation of the rpm.
+  - We specify a recipe for a special bootstrap part. The bootstrap
+    part is a script that will adjust the paths in the buildout
+    script after installation of the rpm.
 
 ZRS spec file (3/3)
 ===================
@@ -1524,11 +1524,11 @@ ZRS spec file (3/3)
   bin/buildout -Uc rpmpost.cfg \
      buildout:offline=true buildout:find-links= buildout:installed= \
      mercury:name=%{name} mercury:recipe=buildoutmercury
-  chmod -R -w . 
+  chmod -R -w .
 
   %preun
   cd $RPM_INSTALL_PREFIX/%{name}
-  chmod -R +w . 
+  chmod -R +w .
   find . -name \*.pyc | xargs rm -f
 
   %files
@@ -1536,32 +1536,32 @@ ZRS spec file (3/3)
   %attr(744, root, root) /etc/init.d/%{name}
 
 
-   We specify a post-installation script that:
+We specify a post-installation script that:
 
-   - Re-bootstraps the buildout using the special bootstrap script
-     installed in the RPM.
+- Re-bootstraps the buildout using the special bootstrap script
+  installed in the RPM.
 
-   - Reruns the buildout:
+- Reruns the buildout:
 
-     - Using a post-installation configuration that specified the
-       parts whose paths need to be adjusted.
+  - Using a post-installation configuration that specified the
+    parts whose paths need to be adjusted.
 
-     - In offline mode because we don't want any network access or new
-       software installed that isn't in the RPM.
+  - In offline mode because we don't want any network access or new
+    software installed that isn't in the RPM.
 
-     - Removing any find links.  This is largely due to a specific
-       detail of our configurations.
+  - Removing any find links.  This is largely due to a specific
+    detail of our configurations.
 
-     - Suppressing the creation of .installed.cfg
+  - Suppressing the creation of .installed.cfg
 
-     - Specifying information for installing a special script that
-       reads our centralized configuration database to configure the
-       application after the RPM is installed.
+  - Specifying information for installing a special script that
+    reads our centralized configuration database to configure the
+    application after the RPM is installed.
 
-   We have a pre-uninstall script that cleans up .pyc files.
+We have a pre-uninstall script that cleans up .pyc files.
 
-   We specify the files to be installed. This is just the buildout
-   directory and a configuration script.
+We specify the files to be installed. This is just the buildout
+directory and a configuration script.
 
 Repeatability
 =============
@@ -1572,9 +1572,9 @@ be checked out and reproduced.
 - We let buildout tell what versions it picked for distributions
 
   - Run with -v
-  
+
   - Look for outout lines of form:
-  
+
     ::
 
       Picked: foo = 1.2
@@ -1590,7 +1590,7 @@ be checked out and reproduced.
     [myversions]
     foo = 1.2
     ...
- 
+
 Deployment issues
 =================
 
