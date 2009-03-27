@@ -6,8 +6,8 @@
    Q: To whom should the copyright for the website be assigned?
    A: Zope Foundation or Jim Fulton  --baiju
 
-Buildout
-========
+Buildout - system for managing development buildouts
+====================================================
 
 .. toctree::
 
