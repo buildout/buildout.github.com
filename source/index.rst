@@ -11,9 +11,10 @@ Buildout - system for managing development buildouts
 
 .. toctree::
 
-   about/index
-   docs/index
-   recipes/index
+   community
+   install
+
+   
 
 What is Buildout?
 -----------------

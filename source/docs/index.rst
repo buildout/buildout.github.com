@@ -1,12 +1,6 @@
 Buildout Documentation
 ======================
 
-.. toctree::
-
-   recipe
-   tutorial
-   using
-
 Using Buildout
 --------------
 
