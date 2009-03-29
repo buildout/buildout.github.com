@@ -76,3 +76,8 @@ Links
   able to recreate that exact buildout one year from now on a
   different server. How do you do that? This is a more simple and
   better working version of an earlier post.
+
+- `Buildout tutorial
+  <https://weblion.psu.edu/trac/weblion/wiki/BuildOut>`_
+
+  Yet another tutorial.
