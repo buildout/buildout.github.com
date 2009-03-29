@@ -35,3 +35,14 @@ Bugs and other issues are tracked at Launchpad_.  Feel free to submit
 issues.
 
 .. _Launchpad: https://bugs.launchpad.net/zc.buildout/
+
+This website development
+------------------------
+
+The source code is maintained in the Zope subversion repository.  To
+check out the trunk::
+
+  svn co  svn://svn.zope.org/repos/main/buildout-website/trunk buildout-website
+
+You can also browse the `code online also
+<http://svn.zope.org/buildout-website/trunk>`_.
