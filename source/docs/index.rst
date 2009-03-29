@@ -12,7 +12,8 @@ Tutorial
 --------
 
 `The tutorial <tutorial.html>`_ goes through all the features of
-Buildout and its usage.
+Buildout and its usage.  This is a slightly modified version of Jim
+Fulton's original presentation hand-out.
 
 Creating Recipes
 ----------------
