@@ -57,3 +57,8 @@ Links
   deployment. How to combine the two? Jean-Paul Ladage and me did
   some brainstorming on this and we'll show you what we came up
   with."
+
+- `django-buildout
+  <http://code.google.com/p/django-buildout/wiki/DjangoEggs>`_
+
+  Django support for zc.buildout.
