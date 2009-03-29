@@ -32,3 +32,9 @@ Links
 
   Modified version of Jim Fulton's tutorial for using buildout,
   originally given at DZUG 2007.
+
+- `buildout tutorial. buildout howto. buildout
+  review. <http://renesd.blogspot.com/2008/05/buildout-tutorial-buildout-howto.html>`_
+
+  This post is a review, a tutorial, and a howto - for and about
+  buildout - a software development tool for the python language.
