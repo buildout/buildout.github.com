@@ -11,8 +11,10 @@ Buildout - system for managing development buildouts
 
 .. toctree::
 
-   community
+   screencasts
    install
+   docs/index
+   community
 
    
 
