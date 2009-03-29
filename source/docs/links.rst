@@ -7,6 +7,11 @@ Links
   This article will show you how to create a repeatable Django
   development environment from scratch using zc.buildout.
 
+- `Howto install Pylons with buildout
+  <http://wiki.pylonshq.com/display/pylonscommunity/Howto+install+Pylons+with+buildout>`_
+
+  This document describes installing Pylons using Buildout.
+
 - `Managing projects with Buildout
   <http://plone.org/documentation/tutorial/buildout>`_
 
