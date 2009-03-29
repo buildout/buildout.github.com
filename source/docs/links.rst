@@ -49,3 +49,11 @@ Links
 
   A criticism about Buildout. There is `one reply to the criticism
   <http://baijum81.livejournal.com/26942.html>`_.
+
+- `Buildout development/production strategy
+  <http://reinout.vanrees.org/weblog/buildout-development-production-strategy>`_
+
+  Reinout van Rees says, "Buildout is great for development and for
+  deployment. How to combine the two? Jean-Paul Ladage and me did
+  some brainstorming on this and we'll show you what we came up
+  with."
