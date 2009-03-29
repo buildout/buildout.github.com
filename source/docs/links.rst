@@ -68,3 +68,11 @@ Links
 
   Detailed explanation on what to do to get buildout running with a
   Plone / Zope environment on Windows.
+
+- `Easily creating repeatable buildouts
+  <http://maurits.vanrees.org/weblog/archive/2008/01/easily-creating-repeatable-buildouts>`_
+
+  When you create a buildout for a production website, you want to be
+  able to recreate that exact buildout one year from now on a
+  different server. How do you do that? This is a more simple and
+  better working version of an earlier post.
