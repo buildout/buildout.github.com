@@ -1,6 +1,12 @@
 Links
 =====
 
+- `A Django Development Environment with zc.buildout
+  <http://www.stereoplex.com/two-voices/a-django-development-environment-with-zc-buildout>`_
+
+  This article will show you how to create a repeatable Django
+  development environment from scratch using zc.buildout.
+
 - `Managing projects with Buildout
   <http://plone.org/documentation/tutorial/buildout>`_
 
