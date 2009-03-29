@@ -43,3 +43,9 @@ Links
 
   This post is a review, a tutorial, and a howto - for and about
   buildout - a software development tool for the python language.
+
+- `zc.buildout vs. "plain" setuptools
+  <http://www.palladion.com/home/tseaver/obzervationz/2008/bulidout_vs_plain_setuptools>`_
+
+  A criticism about Buildout. There is `one reply to the criticism
+  <http://baijum81.livejournal.com/26942.html>`_.
