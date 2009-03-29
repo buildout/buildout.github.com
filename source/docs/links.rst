@@ -27,3 +27,8 @@ Links
   that I accumulate about using buildout, the Python development and
   deployment technology invented by the Zope folks."
 
+- `Buildout docs from Grok community
+  <http://grok.zope.org/documentation/tutorial/introduction-to-zc.buildout>`_
+
+  Modified version of Jim Fulton's tutorial for using buildout,
+  originally given at DZUG 2007.
