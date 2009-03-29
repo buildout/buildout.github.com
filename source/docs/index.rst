@@ -26,3 +26,8 @@ List of Recipes
 
 If you are looking for Buildout recipes, you can find some `here
 <recipelist.html>`_ .
+
+Links
+-----
+
+You can see few links related to Buildout `here <links.html>`_.
