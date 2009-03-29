@@ -62,3 +62,9 @@ Links
   <http://code.google.com/p/django-buildout/wiki/DjangoEggs>`_
 
   Django support for zc.buildout.
+
+- `Using buildout on Windows
+  <http://plone.org/documentation/how-to/using-buildout-on-windows>`_
+
+  Detailed explanation on what to do to get buildout running with a
+  Plone / Zope environment on Windows.
