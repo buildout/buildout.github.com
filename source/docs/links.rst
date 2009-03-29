@@ -19,3 +19,11 @@ Links
   Always going searching for answers to your buildout questions?
   This reference card puts all that information into one handy
   four-page laminated leaflet.
+
+- `Brandon's page about Buildout
+  <http://rhodesmill.org/brandon/buildout>`_
+
+  Brandon says, "This page is where I am collecting all of the hints
+  that I accumulate about using buildout, the Python development and
+  deployment technology invented by the Zope folks."
+
