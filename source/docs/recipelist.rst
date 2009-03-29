@@ -1,8 +1,7 @@
 Buildout Recipes
 ================
 
-This is a list of Buildout recipes commonly used for Python & Zope
-projects.
+This is a list of Buildout recipes commonly used for Python projects.
 
 You can see a list of `recipes in PyPI site
 <http://pypi.python.org/pypi?:action=browse&show=all&c=512>`_
@@ -23,7 +22,7 @@ ZC Buildout recipe for defining Zope 3 applications
 djangorecipe
 ------------
 
-Buildout recipe for Django
+`Buildout recipe for Django <http://pypi.python.org/pypi/djangorecipe>`_
 
 
 plone.recipe.apache
