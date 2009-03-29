@@ -205,22 +205,32 @@ div.maindescription {
     font-weight: bold;
 }
 
+ul.mainlinks { 
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  float: left;
+  width: 100%;
+}
+
 ul.mainlinks li { 
-    display: inline;
+  display: inline;
 }
 
 ul.mainlinks li a { 
-    float: left;
-    padding: 10px;
+  float: left;
+  width: 160px;
+  text-decoration: none;
 }
 
 ul.mainlinks li a span { 
     display: block;
+    text-align: center;
 }
 
 ul.mainlinks li a span.linktitle { 
-    font-size: 19px;
-    display: block;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 ul.mainlinks li a span.linkdesc { 
