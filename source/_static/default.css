@@ -201,16 +201,24 @@ tt {
 }
 
 div.maindescription {
-    font-size: 19px;
-    font-weight: bold;
+  font-size: 19px;
+  font-weight: bold;
+  min-width: 750px;
+}
+
+div.maindescription p {
+  text-align: center;
 }
 
 ul.mainlinks { 
-  padding: 0;
+  padding-left: 15%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 0;
   list-style-type: none;
   float: left;
   width: 100%;
+  min-width: 750px;
 }
 
 ul.mainlinks li { 
@@ -236,4 +244,12 @@ ul.mainlinks li a span.linktitle {
 ul.mainlinks li a span.linkdesc { 
     font-size: 10px;
     display: block;
+}
+
+div.testmnonials { 
+  width: 100%;
+}
+
+div.testmnonials p { 
+  text-align: center;
 }
