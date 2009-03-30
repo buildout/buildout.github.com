@@ -1,54 +1,87 @@
-Installation
-============
+Overview of the Installation Process
+====================================
 
-If you have `setuptools`_ installed, you can use `easy_install` to
-get `zc.buildout`_::
+The `zc.buildout`_ software is very easy to install with only one dependency,
+on the *setuptools* package that provides manipulation facilities for Python
+eggs.
 
-  easy_install zc.buildout
+1. Many **existing projects** are already based on *zc.buildout* and include
+   within their project files the necessary ``bootstrap.py`` file.  To
+   activate use of *zc.buildout* within such a project, simply run that
+   ``bootstrap.py`` using the specific Python interpreter for the project.
+   This may be the system Python or in the case of a `virtualenv`_ sandbox,
+   the Python within the ``bin/`` subdirectory of the project.
 
-.. _setuptools: http://peak.telecommunity.com/DevCenter/setuptools
-.. _zc.buildout: http://pypi.python.org/pypi/zc.buildout
+   ::
 
-However, the recommended method is to use `boostrap.py`_ script to
-boostrap project.  And you can have a local copy of `boostrap.py` in
-your project source.
+      $ cd projectdir
+      $ bin/python bootstrap.py
 
-.. _boostrap.py:
-   http://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py
+.. sidebar:: Don't have an ``easy_install`` command?
 
-You should create a configuration file (`buildout.cfg`) to bootstrap
-a buildout project.  Before running `bootstrap.py` script, create the
-configuration with following content::
+   The ``easy_install`` command comes as part of the `setuptools`_ package.  To
+   install it, download the `ez_setup.py`_ file into a temporary directory and
+   run it with Administrator privileges.
 
-  [buildout]
-  parts =
+2. While *zc.buildout* is most often installed within each project directory,
+   it can also be **installed system-wide**, to make it easy to create new
+   projects.
 
-Now run the `bootstrap.py` followed by `bin/buildout`::
+   ::
 
-  $ python bootstrap.py
-  $ ./bin/buildout
+      $ easy_install zc.buildout
 
-..
-    $ mkdir /tmp/testproject
-    $ cd /tmp/testproject
-    $ wget -c http://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py
-    $ python bootstrap.py 
-    While:
-      Initializing.
-    Error: Couldn't open /tmp/testproject/buildout.cfg
-    $ touch buildout.cfg
-    $ python bootstrap.py 
-    Creating directory '/tmp/testproject/bin'.
-    Creating directory '/tmp/testproject/parts'.
-    Creating directory '/tmp/testproject/develop-eggs'.
-    Generated script '/tmp/testproject/bin/buildout'.
-    $ ./bin/buildout 
-    While:
-      Installing.
-    Error: Missing option: buildout:parts
-    $ cat > buildout.cfg 
-    [buildout]
-    parts =
-    ^C
-    $ ./bin/buildout 
-    $
+   This gives you a new command named ``buildout`` to use in initializing or
+   updating a project.
+
+.. sidebar:: For an even more isolated build environment...
+
+   To use an isolated instance of Python within the project, the following
+   commands will create a new sandbox and establish use of *buildout* within
+   it.
+
+   ::
+
+      $ virtualenv --no-site-packages newproject
+      $ cd newproject
+      $ bin/easy_install zc.buildout
+      $ bin/buildout init
+
+3. To **add zc.buildout to a new project**, the primary step is to execute the
+   "buildout init" command while your current directory is set to the root of
+   the project directory.  This command will create all necessary
+   files/directories, including a minimal ``buildout.cfg`` file to control
+   buildout.
+
+   ::
+
+      $ cd newproject
+      $ buildout init
+
+   This command sequence will use the system Python for the project.  If you
+   have some other project set up that uses *zc.buildout* you can borrow its
+   ``buildout`` command to initialize your new project.
+
+   ::
+
+      $ cd newproject
+      $ /oldproject/bin/buildout init
+
+   Unfortunately this sequence of commands will not provide a ``bootstrap.py``
+   command for others to use to initialize *buildout* when they receive a copy
+   of your project.  Therefore it is recommended that you download and
+   **incorporate a copy of ``bootstrap.py`` within your project fileset**.
+
+   ::
+
+      $ cd newproject
+      $ wget http://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py
+
+
+
+.. _`ez_setup.py`: http://peak.telecommunity.com/dist/ez_setup.py
+.. _`bootstrap.py`: http://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py
+.. _`zc.buildout`: http://pypi.python.org/pypi/zc.buildout
+.. _`virtualenv`: http://pypi.python.org/pypi/virtualenv
+.. _`setuptools`: http://peak.telecommunity.com/DevCenter/setuptools
+

@@ -13,10 +13,15 @@ Buildout - system for managing development buildouts
 
    screencasts
    install
+   dirstruct
    docs/index
+   docs/links
+   docs/recipe
+   docs/recipelist
+   docs/tutorial
+   docs/using
    community
-
-   
+   glossary
 
 What is Buildout?
 -----------------
