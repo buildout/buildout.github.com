@@ -14,14 +14,14 @@
 import sys
 
 # If your extensions are in another directory, add it here.
-#sys.path.append('some/directory')
+sys.path.append('extensions')
 
 # General configuration
 # ---------------------
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-#extensions = []
+#JEFF extensions = ['embeddedvideo', 'recipes']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -71,6 +71,8 @@ pygments_style = 'sphinx'
 # Options for HTML output
 # -----------------------
 
+#JEFF html_translator_class = 'embeddedvideo.MyHTMLTranslator'
+
 # The style sheet to use for HTML and HTML Help pages. A file of that name
 # must exist either in Sphinx' static/ path, or in one of the custom paths
 # given in html_static_path.
@@ -97,7 +99,9 @@ html_last_updated_fmt = '%b %d, %Y'
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
-html_additional_pages = {'index': 'index.html'}
+html_additional_pages = {
+    'index': 'index.html'  # we like a customized frontpage
+    }
 
 # If false, no module index is generated.
 #html_use_modindex = True

@@ -236,20 +236,20 @@ ul.mainlinks li a span {
     text-align: center;
 }
 
-ul.mainlinks li a span.linktitle { 
+ul.mainlinks li a span.linktitle {
     font-size: 22px;
     font-weight: bold;
 }
 
-ul.mainlinks li a span.linkdesc { 
+ul.mainlinks li a span.linkdesc {
     font-size: 10px;
     display: block;
 }
 
-div.testmnonials { 
+div.testimonials {
   width: 100%;
 }
 
-div.testmnonials p { 
+div.testimonials p {
   text-align: center;
 }

@@ -22,6 +22,62 @@ Note that all documents under the source/ tree must appear in some *toctree*
 directive and Sphinx will emit a warning at document build time if this is
 not so.
 
+For the overall site, there are two indices; a general index and a module
+index.  The general index is populated with entries from modules, all
+index-generating description units, and from index directives.  The module
+index contains one entry per module directive.
+
+
+
+Useful ReStructuredText Roles
+=============================
+
+  :envvar:`somevar`
+
+    Generates an index entry that links back to the one or more occurrences of
+    this role.
+
+  :term:`someword`
+
+    Generates a link from where this role occurs to its definition in the
+    sources/glossary.rst document.
+
+  :file:`somefilename`
+
+    Formats the name in a special format suitable to filenames.
+
+  :command:`somecommand`
+
+    Formats the commandname in a special format suitable to command names.
+
+  :program:`someprogram`
+
+    Formats the programname in a special format suitable to program names.
+
+  :pep:`number`
+
+    Generates an external link to the appropriate PEP document.
+
+  :rfc:`number`
+
+    Generates an external link to the appropriate RFC document.
+
+
+Useful ReStructuredText Directives
+==================================
+
+  .. sourcecode:: python
+
+     Some python code
+
+  .. sourcecode:: none
+
+     non-highlighted code
+
+  .. literalinclude::  somefile.py
+     :language: python
+     :linenos:
+
 
 HOW DO I CONFIGURE THE CONVERSION PROCESS?
 ==========================================
@@ -49,8 +105,9 @@ WHO ARE THE ORGANIZERS OF THIS PROJECT?
 =======================================
 
  - Jeff Rush
- - Baiju
+p - Baiju
  - ???
+
 
 Thanks
 ------
