@@ -14,6 +14,7 @@ Thanks
   - Jeff Rush
   - Marius Gedminas
   - Paul Carduner
+  - Roberto Allende (Backgroud image)
 
 - Thanks to the creators of images used in the front page.  They are
   selected from Flickr and all are licensed under CC licenses.
