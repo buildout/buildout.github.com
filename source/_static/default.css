@@ -199,6 +199,13 @@ tt {
     font-size: 0.95em;
 }
 
+div.maintitle { 
+  padding-top: 15px;
+  font-size: 29px;
+  text-align: center;
+  font-weight: bold;
+}
+
 div.maindescription {
   font-size: 19px;
   font-weight: bold;
@@ -206,6 +213,7 @@ div.maindescription {
 
 div.maindescription p {
   text-align: center;
+  color: gray;
 }
 
 ul.mainlinks { 
