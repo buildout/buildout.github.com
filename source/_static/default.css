@@ -256,6 +256,8 @@ ul.mainlinks li a span.linkdesc {
     padding-top: 10px;
 }
 
-div.testimonials p {
+div.testimonials {
+  margin: 0 auto;
+  width: 690px;
   text-align: center;
 }
