@@ -81,3 +81,9 @@ Links
   <https://weblion.psu.edu/trac/weblion/wiki/BuildOut>`_
 
   Yet another tutorial.
+
+- `mr.developer <http://pypi.python.org/pypi/mr.developer>`_
+
+  mr.developer is a zc.buildout extension which makes it easier to
+  work with buildouts containing lots of packages of which you only
+  want to develop some.
