@@ -199,6 +199,14 @@ tt {
     font-size: 0.95em;
 }
 
+div.mainbody {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0 20px 30px 20px;
+    background-image: url(grad1.jpg);
+    background-repeat: repeat-x;
+}
+
 div.maintitle { 
   padding-top: 15px;
   font-size: 29px;
