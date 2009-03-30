@@ -28,7 +28,7 @@ div.body {
 
 div.footer {
     color: #ffffff;
-    width: 100%;
+//    width: 100%;
     padding: 9px 0 9px 0;
     text-align: center;
     font-size: 75%;
@@ -203,7 +203,6 @@ tt {
 div.maindescription {
   font-size: 19px;
   font-weight: bold;
-  min-width: 750px;
 }
 
 div.maindescription p {
@@ -216,9 +215,6 @@ ul.mainlinks {
   padding-bottom: 10px;
   margin: 0;
   list-style-type: none;
-  float: left;
-  width: 100%;
-  min-width: 750px;
 }
 
 ul.mainlinks li { 
@@ -227,7 +223,7 @@ ul.mainlinks li {
 
 ul.mainlinks li a { 
   float: left;
-  width: 160px;
+  padding: 10px;
   text-decoration: none;
 }
 
@@ -244,10 +240,6 @@ ul.mainlinks li a span.linktitle {
 ul.mainlinks li a span.linkdesc {
     font-size: 10px;
     display: block;
-}
-
-div.testimonials {
-  width: 100%;
 }
 
 div.testimonials p {
