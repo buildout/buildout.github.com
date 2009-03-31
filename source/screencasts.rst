@@ -4,7 +4,7 @@ Screencasts
 A Brief Introduction to Buildout
 --------------------------------
 
-by Brandon Craig Rhodes
+by `Brandon Craig Rhodes <http://rhodesmill.org/brandon/buildout>`_
 
 .. raw:: html
 
