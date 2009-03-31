@@ -4,7 +4,7 @@ Buildout Documentation
 Using Buildout
 --------------
 
-Using Buildout <using.html>`_ briefly describes the usage of
+`Using Buildout <using.html>`_ briefly describes the usage of
 Buildout from the perspective of an end user or integrator.
 
 Tutorial
@@ -23,9 +23,9 @@ recipes.
 List of Recipes
 ---------------
 
-A `list of the more commonly used recipes <recipelist.html>` used with Buildout.
+A `list of the more commonly used recipes <recipelist.html>`_ used with Buildout.
 
 Links
 -----
 
-A `collection of links related to Buildout <link.html>`.
+A `collection of links related to Buildout <link.html>`_.

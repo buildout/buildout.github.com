@@ -1,10 +1,9 @@
 Directory Structure of a Buildout
 =================================
 
-.. role:: red
-.. |bullet| unicode:: U+02022
-
 .. include:: <xhtml1-special.txt>
+
+.. role:: red
 
 .. sidebar:: Layout of a Buildout
 
@@ -24,87 +23,108 @@ Directory Structure of a Buildout
 
         |dagger| put :red:`red items` under version control
 
-.. rubric:: bootstrap.py (*version-controlled*)
+.. rubric:: bootstrap.py
 
-A project directory may also contain a :file:`bootstrap.py` script to help a new
-developer set up the tree after checking out a project.  The file is
-optional.
-
-It is suggested that every project that makes use of *zc.buildout* come
-bundled with a :file:`bootstrap.py` file to make it easier for the next
-developer to get started.  :file:`bootstrap.py` installs the *setuptools*
-and *buildout* distributions into the project directory.
+A script to be included with each project to help a new developer set up the
+tree for use with *zc.buildout* after checking out the project.  It installs
+from the network the *zc.buildout* and *setuptools* packages into the project
+directory.
 
 The actual URL for fetching the :file:`bootstrap.py` file is:
 
-  http://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py
+  http://svn.zope.org/\*checkout\*/zc.buildout/trunk/bootstrap/bootstrap.py
 
 
-.. rubric:: buildout.cfg (*version-controlled*)
+.. rubric:: buildout.cfg
 
-The specification for the entire project defaults to :file:`buildout.cfg`
-but you can define others, such as :file:`deployment.cfg` and
-:file:`production.cfg`.
-
-
-.. rubric:: .installed.cfg (*not version-controlled*)
-
-If you look hard, you will also find a hidden file named
-:file:`.installed.cfg`.  which is where *zc.buildout* keeps its state of what
-is currently installed.  Do not tamper with it.
+Contains the default build specification for the entire project but others can
+be defined such as file:`deployment.cfg` and :file:`production.cfg`.
+Specification files can include other specification files.
 
 
-.. rubric:: parts/ (*not version-controlled*)
+.. rubric:: .installed.cfg
 
-And the :file:`parts/` directory is contains code and data managed by
-*zc.buildout*, or more precisely the recipes that make it up.
-
-
-.. rubric:: develop-eggs/ (*not version-controlled*)
-
-The :file:`develop-eggs/` directory holds **egg links** for software being
-developed in the buildout.  The reason for separate :file:`develop-eggs/` and
-:file:`eggs/` is to allow egg cache directories to be shared across multiple
-buildouts.  For example, a common developer technique is to define a common
-eggs directory in their home that all non-develop eggs are stored in.  This
-allows larger buildouts to be set up much more quickly and saves disk space.
+A hidden file that represents the current build state of the project.  The
+*zc.buildout* software updates it as parts are installed or removed. The file
+is used by *zc.buildout* to compute the minimum set of changes to bring the
+project into sync with the :file:`buildout.cfg` or other specification file.
 
 
-.. rubric:: bin/ (*not version-controlled*)
+.. rubric:: parts/
 
-In the :file:`bin/` directory are the executable scripts that *zc.buildout*
-generates from entrypoints within distributions.
-
-
-.. rubric:: bin/buildout (*not version-controlled*)
-
-
-.. rubric:: bin/mypython (*not version-controlled*)
+Each part may create a holding directory underneath :file:`parts/` for the
+specific use of the part's recipe.  The part directory belongs to the recipe
+responsible for installing/uninstalling the part and is not intended for
+modification by the developer.
 
 
-.. rubric:: eggs/ (*not version-controlled*)
+.. rubric:: develop-eggs/
+
+The directory holds a kind of symlink or shortcut link to the development
+directories elsewhere on the system of distributions being worked on.  The
+content of the directory is manipulated by *zc.buildout* in response to
+"develop = DIRS" entries in the build specification file.
 
 
-.. rubric:: downloads/ (*not version-controlled*)
+.. rubric:: bin/
 
-And if you did not change the default locations of the cache directories
-for eggs and tarballs, there will be an :file:`eggs/` and may be a
-:file:`downloads/` directory.  A difference between the two is that those
-in :file:`eggs/` will be referenced "in-place" while those in
-:file:`downloads/` will be unpacked into a subdirectory of :file:`parts/`.
+The directory receives executable scripts that *zc.buildout* creates from
+entrypoints defined within eggs and called out in the build specification.
 
 
-.. rubric:: lib/ (*not version-controlled*)
+.. rubric:: bin/buildout
 
-.. rubric:: build/ (*not version-controlled*)
+The command to invoked *zc.buildout* for bringing the state of the project
+directory into sync with a particular build specification.
 
-.. rubric:: dist/ (*not version-controlled*)
 
+.. rubric:: bin/mypython
+
+Just an example of a specific instance of a Python interpreter that
+encompasses a specific set of parts.  The name is arbitrary and there can be
+any number of such custom interpreters.
+
+
+.. rubric:: eggs/
+
+A cache directory of eggs pulled down from the net, ready for mapping onto the
+*sys.path* of specific parts, as given in the build specification.  This
+directory may be shared across projects if configured to be in a common
+nnlocation, increasing the speed with which buildouts can be constructed.
+
+
+.. rubric:: downloads/
+
+A cache directory of raw files pulled down from the net, such as compressed
+eggs, zipfiles, etc.  After being downloaded into this directory, the contents
+are usually unpacked under a part name under the :file:`parts/`.  This
+directory may also be shared across projects, for greater efficiency.
+
+
+.. rubric:: lib/
+
+Not strictly part of *zc.buildout* this directory appears when running within
+a sandbox created by virtualenv.  It represents a standard Python lib/
+hierarchy underwhich anything installed is outside the control of
+*zc.buildout*.  It generally should be left alone.
+
+.. rubric:: build/
+
+Not strictly part of *zc.buildout* either, it is a scratch directory used by
+distutils/setuptools in the process of constructing eggs.
+
+
+.. rubric:: dist/
+
+Not strictly part of *zc.buildout*, this directory receives the final packed
+representations of distributions such as eggs ready for uploading or sharing.
 
 Example::
 
   $ cd myproject
   $ svn propedit svn:ignore
+
+::
 
   .installed.cfg
   parts
@@ -115,3 +135,6 @@ Example::
   lib
   build
   dist
+
+----
+

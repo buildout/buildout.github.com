@@ -19,7 +19,7 @@ eggs.
 
 .. sidebar:: Don't have an ``easy_install`` command?
 
-   The :command:`easy_install` command comes as part of the `setuptools`_
+   The :program:`easy_install` command comes as part of the `setuptools`_
    package.  To install it, download the :file:`ez_setup.py` file into a
    temporary directory and run it with Administrator privileges.
 
@@ -31,7 +31,7 @@ eggs.
 
       $ easy_install zc.buildout
 
-   This gives you a new command named :command:`buildout` to use in
+   This gives you a new command named :program:`buildout` to use in
    initializing or updating a project.
 
 .. sidebar:: For an even more isolated build environment...
@@ -48,7 +48,7 @@ eggs.
       $ bin/buildout init
 
 3. To **add zc.buildout to a new project**, the primary step is to execute the
-   :command:`buildout init` command while your current directory is set to the
+   :program:`buildout init` command while your current directory is set to the
    root of the project directory.  This command will create all necessary
    files/directories, including a minimal :file:`buildout.cfg` file to control
    buildout.
@@ -60,7 +60,7 @@ eggs.
 
    This command sequence will use the system Python for the project.  If you
    have some other project set up that uses *zc.buildout* you can borrow its
-   :command:`buildout` command to initialize your new project.
+   :program:`buildout` command to initialize your new project.
 
    ::
 
@@ -70,7 +70,7 @@ eggs.
    Unfortunately this sequence of commands will not provide a
    :file:`bootstrap.py` command for others to use to initialize *zc.buildout*
    when they receive a copy of your project.  Therefore it is recommended that
-   you download and **incorporate a copy of :file:`bootstrap.py` within your
+   you download and **incorporate a copy of** :file:`bootstrap.py` **within your
    project fileset**.
 
    ::
