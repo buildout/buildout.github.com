@@ -269,3 +269,29 @@ div.testimonials {
 
   border:		4px solid red !important;
 }
+
+/* AVAILABLE-COLORS
+ * The set of colors understood by docutils.
+ */
+
+.maroon  { color: maroon; }
+.red     { color: red; }
+.magenta { color: magenta; }
+.fuchsia { color: fuchsia; }
+.pink    { color: #FAA; }
+.orange  { color: orange; }
+.yellow  { color: yellow; }
+.lime    { color: lime; }
+.green   { color: green; }
+.olive   { color: olive; }
+.teal    { color: teal; }
+.cyan    { color: cyan; }
+.aqua    { color: aqua; }
+.blue    { color: blue; }
+.navy    { color: navy; }
+.purple  { color: purple; }
+.black   { color: black; }
+.gray    { color: gray; }
+.silver  { color: silver; }
+.white   { color: white; }
+
