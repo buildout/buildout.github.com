@@ -13,8 +13,9 @@ Thanks
   - Baiju M
   - Jeff Rush
   - Marius Gedminas
+  - Martijn Faassen
   - Paul Carduner
-  - Roberto Allende (Backgroud image)
+  - Roberto Allende
 
 - Thanks to the creators of images used in the front page.  They are
   selected from Flickr and all are licensed under CC licenses.
