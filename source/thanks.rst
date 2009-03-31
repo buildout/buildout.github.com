@@ -17,6 +17,10 @@ Thanks
   - Paul Carduner
   - Roberto Allende
 
+- Thanks to Jens Vagelpohl for setting up domain & site.
+
+- Thanks to Christian Theune, Gocept & DZUG for donating domain to Zope Foundation
+
 - Thanks to the creators of images used in the front page.  They are
   selected from Flickr and all are licensed under CC licenses.
 
