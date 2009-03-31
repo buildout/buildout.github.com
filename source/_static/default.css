@@ -272,7 +272,6 @@ div.testimonials {
 .creatorandusers { 
   margin: 40px auto 0;
   width: 710px;
-  font-weight: bold;
 }
 
 .sectiontitle { 
@@ -286,13 +285,17 @@ div.testimonials {
   float: right;
   width: 460px;
   font-size: 18px;
+  line-height: 140%;
 }
 
 .sectionlogos { 
   margin: 10px auto 0;
   width: 410px;
-  //background-color: black;
 }
+
+.sectionlogos a {
+  padding: 10px;
+ }
 
 /* AVAILABLE-COLORS
  * The set of colors understood by docutils.
