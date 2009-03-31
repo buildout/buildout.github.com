@@ -28,4 +28,4 @@ A `list of the more commonly used recipes <recipelist.html>`_ used with Buildout
 Links
 -----
 
-A `collection of links related to Buildout <link.html>`_.
+A `collection of links related to Buildout <links.html>`_.
