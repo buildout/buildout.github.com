@@ -4,6 +4,7 @@ Buildout - system for managing development buildouts
 .. toctree::
 
    screencasts
+   quotes
    install
    docs/dirstruct
    docs/index
