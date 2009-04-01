@@ -73,10 +73,13 @@ pygments_style = 'sphinx'
 
 #JEFF html_translator_class = 'embeddedvideo.MyHTMLTranslator'
 
+html_theme = 'buildout_theme'
+html_theme_path = ['.']
+
 # The style sheet to use for HTML and HTML Help pages. A file of that name
 # must exist either in Sphinx' static/ path, or in one of the custom paths
 # given in html_static_path.
-html_style = 'default.css'
+# html_style = 'default.css'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -91,26 +94,34 @@ html_last_updated_fmt = '%b %d, %Y'
 # typographically correct entities.
 #html_use_smartypants = True
 
-# Content template for the index page.
-#html_index = ''
-
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
 html_additional_pages = {
-    'index': 'index.html'  # we like a customized frontpage
+    'index': 'index.html',  # we like a customized frontpage
     }
 
 # If false, no module index is generated.
-#html_use_modindex = True
+html_use_modindex = False
 
 # If true, the reST sources are included in the HTML build as _sources/<name>.
-#html_copy_source = True
+html_copy_source = True
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Buildoutdoc'
+#htmlhelp_basename = 'Buildoutdoc'
+
+# Add "permalinks" for each heading and description.
+html_add_permalinks = True
+
+# An .ico format of file that is 16x16 or 32x32 pixels in size.
+html_favicon = '_static/hammer-foot.ico'
+#html_favicon = '_static/hammer-B.ico'
+#html_favicon = '_static/pencil-cross-hammer.ico'
+
+html_logo = 'buildout_theme/static/buildout-logo.png'
+
 
 
 # Options for LaTeX output
