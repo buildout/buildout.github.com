@@ -5,11 +5,6 @@ Buildout - system for managing development buildouts
 
    screencasts
    quotes
-   install
-   docs/dirstruct
-   docs/usecase1_singlemod
-   docs/usecase2_wrapmods
-   docs/usecase3_wrapckout
    docs/index
    docs/links
    docs/recipe
