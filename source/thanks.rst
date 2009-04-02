@@ -11,6 +11,7 @@ Thanks
   here):
 
   - Baiju M
+  - Jeff Rush
   - Marius Gedminas
   - Martijn Faassen
   - Paul Carduner
