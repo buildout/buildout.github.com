@@ -136,6 +136,3 @@ Example::
   build
   dist
 
-----
-
-Hello.
