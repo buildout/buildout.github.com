@@ -8,14 +8,11 @@ Buildout - system for managing development buildouts
    install
    docs/dirstruct
    docs/usecase_singlemod
-   docs/usecase2_wrapmods
-   docs/usecase3_wrapckout
    docs/index
-   docs/links
-   docs/recipe
-   docs/recipelist
    docs/tutorial
-   docs/using
+   docs/recipe
+   docs/links
+   docs/recipelist
    community
    glossary
    thanks

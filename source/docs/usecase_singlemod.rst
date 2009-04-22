@@ -76,4 +76,4 @@ our local module to satisfy the search for "xanalogica.tumbler".
 Now you are familiar with `installation <install.html>`_, 
 `directory structure <dirstruct.html>`_ of a typical buildout project.
 Also you understood the basic usage of Buildout from here.
-Now you can go to the more `detailed documentation <docs/index.html>`_. 
+Now you can go to the more `detailed documentation <index.html>`_. 

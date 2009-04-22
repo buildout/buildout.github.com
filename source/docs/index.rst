@@ -1,11 +1,12 @@
 Buildout Documentation
 ======================
 
-Using Buildout
---------------
+Getting Started
+---------------
 
-`Using Buildout <using.html>`_ briefly describes the usage of
-Buildout from the perspective of an end user or integrator.
+- `Overview of the Installation Process <../install.html>`_
+- `Directory Structure of a Buildout <dirstruct.html>`_
+- `Use Case - A Single Module <usecase_singlemod.html>`_
 
 Tutorials
 ---------
