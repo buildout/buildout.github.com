@@ -6,6 +6,11 @@ Links
 
   An article by Jacob Kaplan-Moss, the creator of Django.
 
+- `More buildout notes
+  <http://jacobian.org/writing/more-buildout-notes>`_
+
+  Another article by Jacob Kaplan-Moss, the creator of Django.
+ 
 - `A Django Development Environment with zc.buildout
   <http://www.stereoplex.com/two-voices/a-django-development-environment-with-zc-buildout>`_
 
