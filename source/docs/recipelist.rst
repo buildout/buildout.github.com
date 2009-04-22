@@ -68,3 +68,8 @@ collective.recipe.modwsgi
 Recipe for creating a `paste.deploy <http://pythonpaste.org/deploy>`_
 entry point for `mod_wsgi <http://code.google.com/p/modwsgi>`_ .
 
+pb.recipes.pydev
+----------------
+
+Generates an Eclipse Pydev configuration file with path dependencies for an egg.
+
