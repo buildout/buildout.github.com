@@ -139,5 +139,5 @@ Example::
 -----
 
 Now you are familiar with `installation <install.html>`_ and 
-`directory structure <dirstruct.html>`_ of a typical buildout project.
+directory structure of a typical buildout project.
 Next step is to learn `using buildout to develop a package <usecase_singlemod.html>`_ .

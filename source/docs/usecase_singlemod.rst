@@ -70,3 +70,10 @@ line tells *zc.buildout* to add the egg defined by the :file:`setup.py` in the
 current directory to the list of candidates.  Since *zc.buildout* prefers eggs
 under development over finished eggs in the Cheeseshop, this means it will use
 our local module to satisfy the search for "xanalogica.tumbler".
+
+-----
+
+Now you are familiar with `installation <install.html>`_, 
+`directory structure <dirstruct.html>`_ of a typical buildout project.
+Also you understood the basic usage of Buildout from here.
+Now you can go to the more `detailed documentation <docs/index.html>`_. 
