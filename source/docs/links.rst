@@ -1,6 +1,11 @@
 Links
 =====
 
+- `Developing Django apps with zc.buildout
+  <http://jacobian.org/writing/django-apps-with-buildout>`_
+
+  An article by Jacob Kaplan-Moss, the creator of Django.
+
 - `A Django Development Environment with zc.buildout
   <http://www.stereoplex.com/two-voices/a-django-development-environment-with-zc-buildout>`_
 
