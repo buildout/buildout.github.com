@@ -46,3 +46,19 @@ fez.djangoskel
 --------------
 
 Paster templates for creating Django applications as eggs.
+
+z3c.recipe.eggbasket
+--------------------
+
+Install eggs from a tarball and create that egg.
+
+tl.buildout_gtk
+---------------
+
+A recipe for installing PyGTK, PyObject and PyCairo.
+
+rod.recipe.appengine
+--------------------
+
+Recipe for setting up a google appengine development environment.
+
