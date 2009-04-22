@@ -10,6 +10,15 @@ by `Brandon Craig Rhodes <http://rhodesmill.org/brandon/buildout>`_
 
   <embed id="VideoPlayback" src="http://video.google.com/googleplayer.swf?docid=3428163188647461098&hl=en&fs=true" style="width:400px;height:326px" allowFullScreen="true" allowScriptAccess="always" type="application/x-shockwave-flash"> </embed>
 
+Using buildout to install Zope and Plone
+----------------------------------------
+
+by `The WebLion Team <http://weblion.psu.edu/about>`_
+
+.. raw:: html
+
+  <object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/zZBE0uu5pGg&hl=en&fs=1&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/zZBE0uu5pGg&hl=en&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+
 Slides
 ======
 
