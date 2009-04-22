@@ -62,3 +62,9 @@ rod.recipe.appengine
 
 Recipe for setting up a google appengine development environment.
 
+collective.recipe.modwsgi
+-------------------------
+
+Recipe for creating a `paste.deploy <http://pythonpaste.org/deploy>`_
+entry point for `mod_wsgi <http://code.google.com/p/modwsgi>`_ .
+
