@@ -1,10 +1,11 @@
 Buildout Recipes
 ================
 
-This is a list of Buildout recipes commonly used for Python projects.
-
-You can see a list of `recipes in PyPI site
-<http://pypi.python.org/pypi?:action=browse&show=all&c=512>`_
+This is a list of Buildout recipes created by the community.
+All the recipes given here are available from
+`PyPI <http://pypi.python.org/pypi>`_ .
+You can see a complete list of `recipes in PyPI
+<http://pypi.python.org/pypi?:action=browse&show=all&c=512>`_ .
 
 
 zc.recipe.egg
@@ -22,8 +23,7 @@ ZC Buildout recipe for defining Zope 3 applications
 djangorecipe
 ------------
 
-`Buildout recipe for Django <http://pypi.python.org/pypi/djangorecipe>`_
-
+Buildout recipe for `Django <http://www.djangoproject.com>`_ .
 
 plone.recipe.apache
 -------------------
@@ -36,3 +36,13 @@ z3c.recipe.ldap
 
 Deploy an OpenLDAP server in a zc.buildout
 
+gp.recipe.pip
+-------------
+
+Recipe which allow to install python packages using
+`pip <http://pip.openplans.org>`_
+
+fez.djangoskel
+--------------
+
+Paster templates for creating Django applications as eggs.
