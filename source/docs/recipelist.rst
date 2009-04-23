@@ -80,5 +80,16 @@ entry point for `mod_wsgi <http://code.google.com/p/modwsgi>`_ .
 pb.recipes.pydev
 ----------------
 
-Generates an Eclipse Pydev configuration file with path dependencies for an egg.
+Generates an Eclipse Pydev configuration file with path dependencies
+for an egg.
 
+amplecode.recipe.template
+-------------------------
+
+Recipe for making files out of Jinja2 templates.
+
+collective.buildbot
+-------------------
+
+A set of zc.buildout recipes and support for declarative
+configuration for `Buildbot <http://buildbot.net/trac>`_ .
