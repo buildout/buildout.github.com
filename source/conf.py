@@ -38,7 +38,7 @@ master_doc = 'index'
 
 # General substitutions.
 project = 'Buildout'
-copyright = '2008-2009, Zope Foundation'
+copyright = '2006-2009, Zope Foundation'
 
 # The default replacements for |version| and |release|, also used in various
 # other places throughout the built documents.
