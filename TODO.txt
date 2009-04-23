@@ -1,0 +1,8 @@
+TODO list for website
+=====================
+
+- Improve visibility of recipes
+- Create an FAQ page
+- Cleanup tutorial
+- Create a reference manual
+- Create a quick reference card (PDF)

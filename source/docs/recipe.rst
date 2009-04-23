@@ -265,12 +265,12 @@ we'll see that the directory gets removed and recreated::
 If any of the files or directories created by a recipe are removed,
 the part will be reinstalled::
 
-    $ rmdir mydata
-    $ ./bin/buildout
-    Develop: '/sample-buildout/recipes'
-    Uninstalling data-dir.
-    Installing data-dir.
-    data-dir: Creating directory mydata
+  $ rmdir mydata
+  $ ./bin/buildout
+  Develop: '/sample-buildout/recipes'
+  Uninstalling data-dir.
+  Installing data-dir.
+  data-dir: Creating directory mydata
 
 
 Publishing recipe to PyPI
