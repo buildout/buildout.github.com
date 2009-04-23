@@ -130,8 +130,6 @@ html_use_modindex = False
 
 # An .ico format of file that is 16x16 or 32x32 pixels in size.
 html_favicon = '_static/hammer-foot.ico'
-#html_favicon = '_static/hammer-B.ico'
-#html_favicon = '_static/pencil-cross-hammer.ico'
 html_logo = 'buildout_theme/static/buildout-logo.png'
 
 # -- Options for LaTeX output --------------------------------------------------
