@@ -1,36 +1,40 @@
-WHAT IS THIS PROJECT
-====================
+What is this project ?
+======================
 
-This project is to collect and improve the documentation for the "buildout"
-tool in a form suitable for delivery via the website buildout.zope.org.  That
-documentation is in the form of reStructuredText and relies upon the "sphinx"
-tool to process it into HTML while automatically producing cross-references,
-indices and such.
+This project is to collect and improve the documentation for the
+"buildout" tool in a form suitable for delivery via the website
+http://www.buildout.org.  That documentation is in the form of
+reStructuredText and relies upon the "sphinx" tool to process it into
+HTML while automatically producing cross-references, indices and
+such.
 
-WHERE ARE THE SOURCE DOCUMENTS?
-===============================
+Where are the source documents ?
+================================
 
   source/
 
-The Sphinx tool relies upon a "table of contents tree" to organize the various
-source documents into a comprehensive whole.  This tree is specified in a
-source document with the "toctree::" directive.  The topmost or master
-document, as specified in source/conf.py, is source/index.rst.  All source
-documents must end with the .rst filename extension.
+The Sphinx tool relies upon a "table of contents tree" to organize
+the various source documents into a comprehensive whole.  This tree
+is specified in a source document with the "toctree::" directive.
+The topmost or master document, as specified in source/conf.py, is
+source/index.rst.  All source documents must end with the ".rst"
+filename extension.
 
-Note that all documents under the source/ tree must appear in some *toctree*
-directive and Sphinx will emit a warning at document build time if this is
-not so.
+Note that all documents under the "source/" tree must appear in some
+*toctree* directive and Sphinx will emit a warning at document build
+time if this is not so.
 
-For the overall site, there are two indices; a general index and a module
-index.  The general index is populated with entries from modules, all
-index-generating description units, and from index directives.  The module
-index contains one entry per module directive.
+For the overall site, there are two indices; a general index and a
+module index.  The general index is populated with entries from
+modules, all index-generating description units, and from index
+directives.  The module index contains one entry per module
+directive.
 
 
-
-Useful ReStructuredText Roles
+Useful ReStructuredText roles
 =============================
+
+::
 
   :envvar:`somevar`
 
@@ -63,8 +67,10 @@ Useful ReStructuredText Roles
     Generates an external link to the appropriate RFC document.
 
 
-Useful ReStructuredText Directives
+Useful ReStructuredText directives
 ==================================
+
+::
 
   .. sourcecode:: python
 
@@ -79,47 +85,31 @@ Useful ReStructuredText Directives
      :linenos:
 
 
-HOW DO I CONFIGURE THE CONVERSION PROCESS?
-==========================================
+How do i configure the conversion process ?
+===========================================
 
   source/
     conf.py
 
 
-WHERE ARE THE DELIVERABLE HTML DOCUMENTS?
-=========================================
+Where are the deliverable html documents ?
+==========================================
 
   build/
     html/
       index.html
 
 
-HOW IS THE HTML STYLING CONTROLLED?
+How is the html styling controlled?
 ===================================
 
-The CSS stylesheet to be used is "default.css" and it comes from Sphinx, but
-can be overriden by dropping a file under source/_static/.
+The CSS stylesheet to be used is "default.css" and it comes from
+Sphinx, but can be overriden by dropping a file under
+source/_static/.
 
 
-WHO ARE THE ORGANIZERS OF THIS PROJECT?
-=======================================
+Who are the organizers of this project ?
+========================================
 
- - Jeff Rush
-p - Baiju
- - ???
-
-
-Thanks
-------
-
-watch.jpg
-http://www.flickr.com/photos/66164549@N00/2491909299
-
-start.jpg
-http://www.flickr.com/photos/waytru/511060488
-
-learn.jpg
-http://www.flickr.com/photos/munaz/2517170549
-
-involve.jpg
-http://www.flickr.com/photos/e_phots/2642111978
+- Jeff Rush
+- Baiju M
