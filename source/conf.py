@@ -86,7 +86,7 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  Major themes that come with
 # Sphinx are currently 'default' and 'sphinxdoc'.
 #html_theme = 'default'
-html_theme = 'buildout_theme'
+html_theme = 'buildout_theme2'
 html_theme_path = ['.']
 
 # The style sheet to use for HTML and HTML Help pages. A file of that name
@@ -129,8 +129,8 @@ html_use_modindex = False
 #html_show_sourcelink = True
 
 # An .ico format of file that is 16x16 or 32x32 pixels in size.
-html_favicon = 'buildout_theme/static/hammer-foot.ico'
-html_logo = 'buildout_theme/static/buildout-logo.png'
+#html_favicon = 'buildout_theme/static/hammer-foot.ico'
+#html_logo = 'buildout_theme/static/buildout-logo.png'
 
 # -- Options for LaTeX output --------------------------------------------------
 
