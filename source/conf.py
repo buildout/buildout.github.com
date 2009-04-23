@@ -81,13 +81,11 @@ pygments_style = 'sphinx'
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
 
-
 # -- Options for HTML output ---------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  Major themes that come with
 # Sphinx are currently 'default' and 'sphinxdoc'.
-# html_theme = 'default'
-
+#html_theme = 'default'
 html_theme = 'buildout_theme'
 html_theme_path = ['.']
 
@@ -134,10 +132,7 @@ html_use_modindex = False
 html_favicon = '_static/hammer-foot.ico'
 #html_favicon = '_static/hammer-B.ico'
 #html_favicon = '_static/pencil-cross-hammer.ico'
-
 html_logo = 'buildout_theme/static/buildout-logo.png'
-
-
 
 # -- Options for LaTeX output --------------------------------------------------
 
