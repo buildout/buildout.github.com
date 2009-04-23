@@ -1,5 +1,9 @@
-Creating Recipes
-================
+Developing Buildout Recipes
+===========================
+
+
+Introduction
+------------
 
 A Buildout part is created by a recipe.  Recipes are always installed
 as Python eggs.  They can be downloaded from a package server, such as
@@ -11,6 +15,10 @@ link" that contains the name of a source directory.  Develop eggs
 don't have to be packaged for distribution to be used and can be
 modified in place, which is especially useful while they are being
 developed.
+
+
+Initial steps
+-------------
 
 Let's create a recipe as part of the sample project.  We'll create a
 recipe for creating directories.  First, we'll create a recipes source
@@ -129,6 +137,9 @@ for an egg to define the services it provides.  Here we've said that
 we define a zc.buildout entry point named mkdir.  Recipe classes must
 be exposed as entry points in the zc.buildout group.  we give entry
 points names within the group.
+
+Using recipes
+-------------
 
 We also need a README.txt for our recipes to avoid an annoying warning
 from distutils, on which setuptools and zc.buildout are based::
@@ -260,3 +271,19 @@ the part will be reinstalled::
     Uninstalling data-dir.
     Installing data-dir.
     data-dir: Creating directory mydata
+
+
+Publishing recipe to PyPI
+-------------------------
+
+
+Conclusion
+----------
+
+Recipe is the extension mechanism provided by Buildout.  There are
+hundreds of `recipes available in PyPI
+<http://pypi.python.org/pypi?:action=browse&show=all&c=512>`_ and
+some important ones are listed in the `recipe list
+<recipelist.html>`_ .  If you need any functionality for building
+your application check the list of recipes available, otherwise you
+can create one yourself.
