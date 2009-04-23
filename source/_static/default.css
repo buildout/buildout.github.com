@@ -74,7 +74,7 @@ div.sphinxsidebar {
 {%- if theme_stickysidebar|tobool %}
 /* this is nice, but it it leads to hidden headings when jumping
    to an anchor */
-/*
+
 div.related {
     position: fixed;
 }
@@ -82,7 +82,7 @@ div.related {
 div.documentwrapper {
     margin-top: 30px;
 }
-*/
+
 {%- endif %}
 
 div.sphinxsidebar h3 {
@@ -233,6 +233,40 @@ tt {
     font-size: 0.95em;
 }
 
+div.mainbody {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0 20px 30px 20px;
+  background-image: url(grad1.jpg);
+  background-repeat: repeat-x;
+}
+
+div.maintitle { 
+  padding-top: 15px;
+  font-size: 29px;
+  text-align: center;
+  font-weight: bold;
+}
+
+div.maindescription {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+div.maindescription p {
+  text-align: center;
+  color: gray;
+}
+
+ul.mainlinks {
+  margin: 0;
+  list-style-type: none;
+}
+
+ul.mainlinks li {
+  display: inline;
+}
+
 ul.mainlinks li a {
   float: left;
   padding: 15px;
@@ -288,10 +322,6 @@ div.testimonials {
 
 .sectionlogos a {
   padding: 10px;
-}
-
-div.documentwrapper {
-    background-image: url(img/blueprint.jpg) !important;
 }
 
 div#searchbox .searchtip {
