@@ -1,12 +1,21 @@
 Buildout Recipes
 ================
 
-This is a list of Buildout recipes created by the community.
-All the recipes given here are available from
-`PyPI <http://pypi.python.org/pypi>`_ .
-You can see a complete list of `recipes in PyPI
+Recipes are the extension mechanism provided by Buildout to add new
+functionalities to your software building.  You can read the
+`Developing Buildout Recipes <recipe.html>`_ to learn more about
+creating Buildout recipes.
+
+This is a list of Buildout recipes created by the community.  All the
+recipes listed here are available from `PyPI
+<http://pypi.python.org/pypi>`_ .  You can see a complete list of
+`recipes in PyPI
 <http://pypi.python.org/pypi?:action=browse&show=all&c=512>`_ .
 
+If you adding a recipe to PyPI, please use the ``Framework ::
+Buildout`` trove classifier, so that it will be automatically listed
+in the `PyPI list
+<http://pypi.python.org/pypi?:action=browse&show=all&c=512>`_ .
 
 zc.recipe.egg
 -------------
