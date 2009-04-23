@@ -74,7 +74,7 @@ div.sphinxsidebar {
 {%- if theme_stickysidebar|tobool %}
 /* this is nice, but it it leads to hidden headings when jumping
    to an anchor */
-
+/*
 div.related {
     position: fixed;
 }
@@ -82,7 +82,7 @@ div.related {
 div.documentwrapper {
     margin-top: 30px;
 }
-
+*/
 {%- endif %}
 
 div.sphinxsidebar h3 {
@@ -322,11 +322,6 @@ div.testimonials {
 
 .sectionlogos a {
   padding: 10px;
-}
-
-div#searchbox .searchtip {
-    background-color: #272D7B; /* blueprint blue */
-    padding: 4px 4px 4px 4px;
 }
 
 /* AVAILABLE-COLORS
