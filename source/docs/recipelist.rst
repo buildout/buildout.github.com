@@ -12,7 +12,7 @@ recipes listed here are available from `PyPI
 `recipes in PyPI
 <http://pypi.python.org/pypi?:action=browse&show=all&c=512>`_ .
 
-If you adding a recipe to PyPI, please use the ``Framework ::
+If you are adding a recipe to PyPI, please use the ``Framework ::
 Buildout`` trove classifier, so that it will be automatically listed
 in the `PyPI list
 <http://pypi.python.org/pypi?:action=browse&show=all&c=512>`_ .
