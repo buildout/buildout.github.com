@@ -1,7 +1,7 @@
 Buildout Recipes
 ================
 
-Recipes are the extension mechanism provided by Buildout to add new
+Recipes are the plugin mechanism provided by Buildout to add new
 functionalities to your software building.  You can read the
 `Developing Buildout Recipes <recipe.html>`_ to learn more about
 creating Buildout recipes.
