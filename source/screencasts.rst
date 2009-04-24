@@ -19,6 +19,37 @@ by `The WebLion Team <http://weblion.psu.edu/about>`_
 
   <object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/zZBE0uu5pGg&hl=en&fs=1&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/zZBE0uu5pGg&hl=en&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
 
+Talks
+=====
+
+How AlterWay releases web applications using zc.buildout
+--------------------------------------------------------
+
+by Tarek Ziadé from PyCON 2009
+
+.. raw:: html
+
+  <embed src="http://blip.tv/play/AfiKQAA" type="application/x-shockwave-flash" width="720" height="510" allowscriptaccess="always" allowfullscreen="true"></embed>
+
+Buildout for pure Python projects
+---------------------------------
+
+by Carsten Rebbien from EuroPython 2008
+
+.. raw:: html
+
+  <embed src="http://blip.tv/play/AcS2QwA" type="application/x-shockwave-flash" width="480" height="300" allowscriptaccess="always" allowfullscreen="true"></embed>
+
+Buildout lightning talk
+-----------------------
+
+by Philipp von Weitershausen from EuroPython 2007
+
+.. raw:: html
+
+  <embed src="http://blip.tv/play/AZyBfgA" type="application/x-shockwave-flash" width="320" height="270" allowscriptaccess="always" allowfullscreen="true"></embed>
+
+
 Slides
 ======
 
