@@ -49,6 +49,14 @@ by Philipp von Weitershausen from EuroPython 2007
 
   <embed src="http://blip.tv/play/AZyBfgA" type="application/x-shockwave-flash" width="320" height="270" allowscriptaccess="always" allowfullscreen="true"></embed>
 
+Delivering egg-based applications with zc.buildout, using a distribauted model
+------------------------------------------------------------------------------
+
+by Tarek Ziadé
+
+.. raw:: html
+
+  <center>                                                            <script type="text/javascript" src="http://blip.tv/scripts/pokkariPlayer.js?ver=2008010901"></script>                   <script type="text/javascript" src="http://blip.tv/syndication/write_player?skin=js&posts_id=1837196&source=3&autoplay=true&file_type=flv&player_width=&player_height="></script>                   <div id="blip_movie_content_1837196">                   <a rel="enclosure" href="http://blip.tv/file/get/Zpugdc-DeliveringEggbasedApplicationsWithZcbuildoutUsingADistrib223.MOV" onclick="play_blip_movie_1837196(); return false;"><img title="Click to play" alt="Video thumbnail. Click to play" src="http://blip.tv/file/get/Zpugdc-DeliveringEggbasedApplicationsWithZcbuildoutUsingADistrib223.MOV.jpg" border="0" title="Click To Play" /></a>                  <br />                  <a rel="enclosure" href="http://blip.tv/file/get/Zpugdc-DeliveringEggbasedApplicationsWithZcbuildoutUsingADistrib223.MOV" onclick="play_blip_movie_1837196(); return false;">Click To Play</a>                  </div>                                      </center>
 
 Slides
 ======
