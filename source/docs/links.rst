@@ -97,3 +97,6 @@ Links
   mr.developer is a zc.buildout extension which makes it easier to
   work with buildouts containing lots of packages of which you only
   want to develop some.
+
+- `Installing GeoDjango with PostgreSQL and zc.buildout <http://www.stereoplex.com/two-voices/installing-geodjango-with-postgresql-and-zc-buildout>`_
+
