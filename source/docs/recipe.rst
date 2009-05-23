@@ -5,11 +5,12 @@ Developing Buildout Recipes
 Introduction
 ------------
 
-A Buildout **part** is created by a recipe.  Recipes are always
-installed as Python eggs.  They can be downloaded from a package
-server, such as the `Python Package Index (PyPI)
-<http://pypi.python.org/pypi>`_ , or they can be developed as part of
-a project using a **develop** egg.
+Recipes are the plugin mechanism provided by Buildout to add new
+functionalities to your software building.  A Buildout **part** is
+created by a recipe.  Recipes are always installed as Python eggs.
+They can be downloaded from a package server, such as the `Python
+Package Index (PyPI) <http://pypi.python.org/pypi>`_ , or they can be
+developed as part of a project using a **develop** egg.
 
 A **develop** egg is a special kind of egg that gets installed as an
 `egg link` that contains the name of a source directory.  Develop
@@ -67,7 +68,7 @@ Currently, recipes must define three methods:
 The constructor is responsible for updating a parts options to
 reflect data read from other sections.  The buildout system keeps
 track of whether a part specification has changed.  A part
-specification has changed if it's options, after adjusting for data
+specification has changed if its options, after adjusting for data
 read from other sections, has changed, or if the recipe has changed.
 Only the options for the part are considered.  If data are read from
 other sections, then that information has to be reflected in the
@@ -133,7 +134,7 @@ provided via a `setup.py` script::
   from setuptools import setup
   
   setup(
-      name = "recipes",
+      name = "mkdir_recipe",
       entry_points = {'zc.buildout': ['mkdir = mkdir:Mkdir']},
       )
 
@@ -146,7 +147,7 @@ points names within the group.
 We also need a README.txt for our recipes to avoid an annoying warning
 from distutils, on which setuptools and zc.buildout are based::
 
-    >>> write(sample_buildout, 'recipes', 'README.txt', " ")
+    $ touch README.txt
 
 
 Using recipes
@@ -155,17 +156,17 @@ Using recipes
 Now let's update our `buildout.cfg`::
 
   [buildout]
-  develop = recipes
+  develop = mkdir_recipe
   parts = data-dir
   
   [data-dir]
-  recipe = recipes:mkdir
+  recipe = mkdir_recipe:mkdir
   path = mystuff
 
 
 Let's go through the changes one by one::
 
-  develop = recipes
+  develop = mkdir_recipe
 
 This tells the buildout to install a development egg for our recipes.
 Any number of paths can be listed.  The paths can be relative or
@@ -200,37 +201,37 @@ buildout::
 
   $ cd sample_buildout
   $ ./bin/buildout
-  Develop: '/sample-buildout/recipes'
+  Develop: '/sample-buildout/mkdir_recipe'
   Installing data-dir.
   data-dir: Creating directory mystuff
 
 We see that the recipe created the directory, as expected::
 
   $ ls
-  -  .installed.cfg
-  d  bin
-  -  buildout.cfg
-  d  develop-eggs
-  d  eggs
-  d  mystuff
-  d  parts
-  d  recipes
+  .installed.cfg
+  bin
+  buildout.cfg
+  develop-eggs
+  eggs
+  mystuff
+  parts
+  mkdir_recipe
 
 In addition, `.installed.cfg` has been created containing information
 about the part we installed::
 
     $ cat .installed.cfg
     [buildout]
-    installed_develop_eggs = /sample-buildout/develop-eggs/recipes.egg-link
+    installed_develop_eggs = /sample-buildout/develop-eggs/mkdir_recipe.egg-link
     parts = data-dir
     <BLANKLINE>
     [data-dir]
     __buildout_installed__ = /sample-buildout/mystuff
     __buildout_signature__ = recipes-c7vHV6ekIDUPy/7fjAaYjg==
     path = /sample-buildout/mystuff
-    recipe = recipes:mkdir
+    recipe = mkdir_recipe:mkdir
 
-Note that the directory we installed is included in .installed.cfg.
+Note that the directory we installed is included in `.installed.cfg`.
 In addition, the path option includes the actual destination
 directory.
 
@@ -238,29 +239,29 @@ If we change the name of the directory in the configuration file,
 we'll see that the directory gets removed and recreated::
 
   [buildout]
-  develop = recipes
+  develop = mkdir_recipe
   parts = data-dir
   
   [data-dir]
-  recipe = recipes:mkdir
+  recipe = mkdir_recipe:mkdir
   path = mydata
 
 
   $ ./bin/buildout
-  Develop: '/sample-buildout/recipes'
+  Develop: '/sample-buildout/mkdir_recipe'
   Uninstalling data-dir.
   Installing data-dir.
   data-dir: Creating directory mydata
 
   $ ls
-  -  .installed.cfg
-  d  bin
-  -  buildout.cfg
-  d  develop-eggs
-  d  eggs
-  d  mydata
-  d  parts
-  d  recipes
+  .installed.cfg
+  bin
+  buildout.cfg
+  develop-eggs
+  eggs
+  mydata
+  parts
+  mkdir_recipe
 
 If any of the files or directories created by a recipe are removed,
 the part will be reinstalled::
@@ -276,11 +277,16 @@ the part will be reinstalled::
 Publishing recipe to PyPI
 -------------------------
 
+If you are adding a recipe to PyPI, please use the ``Framework ::
+Buildout`` trove classifier, so that it will be automatically listed
+in the `PyPI list
+<http://pypi.python.org/pypi?:action=browse&show=all&c=512>`_ .
+
 
 Conclusion
 ----------
 
-Recipe is the extension mechanism provided by Buildout.  There are
+Recipes are the plugin mechanism provided by Buildout.  There are
 hundreds of `recipes available in PyPI
 <http://pypi.python.org/pypi?:action=browse&show=all&c=512>`_ and
 some important ones are listed in the `recipe list
