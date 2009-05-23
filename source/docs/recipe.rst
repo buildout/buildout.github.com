@@ -220,16 +220,16 @@ We see that the recipe created the directory, as expected::
 In addition, `.installed.cfg` has been created containing information
 about the part we installed::
 
-    $ cat .installed.cfg
-    [buildout]
-    installed_develop_eggs = /sample-buildout/develop-eggs/mkdir_recipe.egg-link
-    parts = data-dir
-    <BLANKLINE>
-    [data-dir]
-    __buildout_installed__ = /sample-buildout/mystuff
-    __buildout_signature__ = recipes-c7vHV6ekIDUPy/7fjAaYjg==
-    path = /sample-buildout/mystuff
-    recipe = mkdir_recipe:mkdir
+  $ cat .installed.cfg
+  [buildout]
+  installed_develop_eggs = /sample-buildout/develop-eggs/mkdir_recipe.egg-link
+  parts = data-dir
+  <BLANKLINE>
+  [data-dir]
+  __buildout_installed__ = /sample-buildout/mystuff
+  __buildout_signature__ = recipes-c7vHV6ekIDUPy/7fjAaYjg==
+  path = /sample-buildout/mystuff
+  recipe = mkdir_recipe:mkdir
 
 Note that the directory we installed is included in `.installed.cfg`.
 In addition, the path option includes the actual destination
@@ -277,11 +277,14 @@ the part will be reinstalled::
 Publishing recipe to PyPI
 -------------------------
 
-If you are adding a recipe to PyPI, please use the ``Framework ::
-Buildout`` trove classifier, so that it will be automatically listed
-in the `PyPI list
+If you are adding a recipe to PyPI, use the ``Framework :: Buildout``
+trove classifier, so that it will be automatically listed in the
+`PyPI list
 <http://pypi.python.org/pypi?:action=browse&show=all&c=512>`_ .
 
+More details about uploading eggs to PyPI are given in `setuptools
+documentation
+<http://peak.telecommunity.com/DevCenter/setuptools#upload-upload-source-and-or-egg-distributions-to-pypi>`_.
 
 Conclusion
 ----------
