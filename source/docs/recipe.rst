@@ -138,17 +138,32 @@ provided via a `setup.py` script::
       entry_points = {'zc.buildout': ['mkdir = mkdir:Mkdir']},
       )
 
+.. sidebar:: Default Recipe
+
+   If your package is providing only one recipe, the name of entry
+   point can be given as `default`.  So, the user of recipe need not
+   to explicitly mention it in the parts.
+
+   Eg:- ``entry_points = {'zc.buildout': ['default = mkdir:Mkdir']}``
+
+   Usage::
+ 
+     [partname]
+     recipe = mkdir_recipe
+     path = mystuff
+
 Our setup script defines an entry point.  Entry points provide a way
 for an egg to define the services it provides.  Here we've said that
-we define a zc.buildout entry point named mkdir.  Recipe classes must
-be exposed as entry points in the zc.buildout group.  we give entry
-points names within the group.
+we define a zc.buildout entry point named `mkdir`.  Recipe classes
+must be exposed as entry points in the zc.buildout group.  we give
+entry points names within the group.
 
 We also need a README.txt for our recipes to avoid an annoying warning
 from distutils, on which setuptools and zc.buildout are based::
 
     $ touch README.txt
 
+The above command will create an empty `README.txt` file.
 
 Using recipes
 -------------
@@ -285,6 +300,7 @@ trove classifier, so that it will be automatically listed in the
 More details about uploading eggs to PyPI are given in `setuptools
 documentation
 <http://peak.telecommunity.com/DevCenter/setuptools#upload-upload-source-and-or-egg-distributions-to-pypi>`_.
+
 
 Conclusion
 ----------
