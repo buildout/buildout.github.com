@@ -76,7 +76,7 @@ eggs.
    ::
 
       $ cd newproject
-      $ wget http://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py
+      $ wget -O bootstrap.py https://bootstrap.pypa.io/bootstrap-buildout.py
 
 ----
 
