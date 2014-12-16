@@ -32,13 +32,13 @@ directory.
 
 The actual URL for fetching the :file:`bootstrap.py` file is:
 
-  http://svn.zope.org/\*checkout\*/zc.buildout/trunk/bootstrap/bootstrap.py
+  https://bootstrap.pypa.io/bootstrap-buildout.py
 
 
 .. rubric:: buildout.cfg
 
 Contains the default build specification for the entire project but others can
-be defined such as file:`deployment.cfg` and :file:`production.cfg`.
+be defined such as :file:`deployment.cfg` and :file:`production.cfg`.
 Specification files can include other specification files.
 
 
@@ -119,12 +119,8 @@ distutils/setuptools in the process of constructing eggs.
 Not strictly part of *zc.buildout*, this directory receives the final packed
 representations of distributions such as eggs ready for uploading or sharing.
 
-Example::
-
-  $ cd myproject
-  $ svn propedit svn:ignore
-
-::
+Here's a list of files and directories that you can ignore in your version
+control system software::
 
   .installed.cfg
   parts
