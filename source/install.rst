@@ -17,11 +17,11 @@ eggs.
       $ cd projectdir
       $ bin/python bootstrap.py
 
-.. sidebar:: Don't have an ``easy_install`` command?
+.. sidebar:: Don't have the ``pip`` command?
 
-   The :program:`easy_install` command comes as part of the `setuptools`_
-   package.  To install it, download the `ez_setup.py`_ file into a
-   temporary directory and run it with Administrator privileges.
+   You can install the :program:`pip` command by following the instructions on
+   the `pip installation page <https://pip.pypa.io/en/latest/installing.html>`_.
+
 
 2. While *zc.buildout* is most often installed within each project directory,
    it can also be **installed system-wide**, to make it easy to create new
@@ -29,7 +29,7 @@ eggs.
 
    ::
 
-      $ easy_install zc.buildout
+      $ pip install zc.buildout
 
    This gives you a new command named :program:`buildout` to use in
    initializing or updating a project.
