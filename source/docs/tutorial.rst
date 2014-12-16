@@ -514,7 +514,7 @@ Exercise 1
 
 Try building out ``zope.event``.
 
-- Check out: svn://svn.zope.org/repos/main/zope.event/trunk
+- Check out: https://github.com/zopefoundation/zope.event
 
 - Bootstrap
 

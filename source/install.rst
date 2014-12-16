@@ -20,7 +20,7 @@ eggs.
 .. sidebar:: Don't have an ``easy_install`` command?
 
    The :program:`easy_install` command comes as part of the `setuptools`_
-   package.  To install it, download the :file:`ez_setup.py` file into a
+   package.  To install it, download the `ez_setup.py`_ file into a
    temporary directory and run it with Administrator privileges.
 
 2. While *zc.buildout* is most often installed within each project directory,
@@ -44,7 +44,7 @@ eggs.
 
       $ virtualenv --no-site-packages newproject
       $ cd newproject
-      $ bin/easy_install zc.buildout
+      $ bin/pip install zc.buildout
       $ bin/buildout init
 
 3. To **add zc.buildout to a new project**, the primary step is to execute the
@@ -85,9 +85,7 @@ also covers which file/directories should be under version control and which
 should not.
 
 
-.. _`ez_setup.py`: http://peak.telecommunity.com/dist/ez_setup.py
-.. _`bootstrap.py`: http://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py
+.. _`ez_setup.py`: https://bootstrap.pypa.io/ez_setup.py
 .. _`zc.buildout`: http://pypi.python.org/pypi/zc.buildout
 .. _`virtualenv`: http://pypi.python.org/pypi/virtualenv
-.. _`setuptools`: http://peak.telecommunity.com/DevCenter/setuptools
-
+.. _`setuptools`: http://pypi.python.org/pypi/setuptools

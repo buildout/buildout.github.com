@@ -18,14 +18,14 @@ list.
 Source code
 -----------
 
-The source code of Buildout is maintained in the Zope subversion
-repository.  To check out the trunk::
+The source code of Buildout is maintained in a Git repository.  To
+check out the latest release::
 
-  svn co  svn://svn.zope.org/repos/main/zc.buildout/trunk zc.buildout
+  git clone git://github.com/buildout/buildout
 
-You can also browse the `source code
-<http://svn.zope.org/repos/main/zc.buildout/trunk>`_ `online
-<http://svn.zope.org/zc.buildout/trunk>`_ .
+
+You can also browse the `source code online
+<https://github.com/buildout/buildout>`_ .
 
 You can contact `Jim Fulton <http://wiki.zope.org/zope3/JimFulton>`_
 or ask in the `distutils-sig` for contributing to this project.
@@ -39,19 +39,17 @@ There is an IRC channel `#buildout` at freenode.net .
 Issue tracker
 -------------
 
-Bugs and other issues are tracked at `Launchpad
-<https://bugs.launchpad.net/zc.buildout>`_ .  Feel free to submit
+Bugs and other issues are tracked on `Github
+<https://github.com/buildout/buildout/issues/>`_ .  Feel free to submit
 issues.
 
 Website development
 ------------------------
 
 The `www.buildout.org <http://www.buildout.org>`_ source code is
-maintained in the Zope subversion repository.  To check out the
-trunk::
+maintained in a Git repository.  To check out the trunk::
 
-  svn co  svn://svn.zope.org/repos/main/buildout-website/trunk buildout-website
+  git clone git://github.com/buildout/buildout.github.com
 
-You can also browse the `source code
-<http://svn.zope.org/repos/main/buildout-website/trunk>`_ `online
-<http://svn.zope.org/buildout-website/trunk>`_.
+You can also browse the `source code online
+<https://github.com/buildout/buildout.github.com>`_.
