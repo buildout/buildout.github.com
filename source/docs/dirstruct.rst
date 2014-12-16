@@ -38,7 +38,7 @@ The actual URL for fetching the :file:`bootstrap.py` file is:
 .. rubric:: buildout.cfg
 
 Contains the default build specification for the entire project but others can
-be defined such as file:`deployment.cfg` and :file:`production.cfg`.
+be defined such as :file:`deployment.cfg` and :file:`production.cfg`.
 Specification files can include other specification files.
 
 
