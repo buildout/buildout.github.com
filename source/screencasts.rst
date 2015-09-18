@@ -49,7 +49,7 @@ by Philipp von Weitershausen from EuroPython 2007
 
   <embed src="http://blip.tv/play/AZyBfgA" type="application/x-shockwave-flash" width="320" height="270" allowscriptaccess="always" allowfullscreen="true"></embed>
 
-Delivering egg-based applications with zc.buildout, using a distribauted model
+Delivering egg-based applications with zc.buildout, using a distributed model
 ------------------------------------------------------------------------------
 
 by Tarek Ziadé
