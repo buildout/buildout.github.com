@@ -132,7 +132,7 @@ collective.recipe.modwsgi
 collective.recipe.mxbase
 ------------------------
 
-`collective.recipe.mxbase <http://pypi.python.org/pypi/collective.recipe.mxbase/0.1>`_ is a buildout recipe to install eGenix mx.base 
+`collective.recipe.mxbase <http://pypi.python.org/pypi/collective.recipe.mxbase/0.1>`_ is a buildout recipe to install eGenix mx.base
 
 collective.recipe.mxodbc
 ------------------------
@@ -196,12 +196,12 @@ collective.recipe.template
 
 `collective.recipe.template <http://pypi.python.org/pypi/collective.recipe.template/1.5>`_ is a buildout recipe to generate a text file from a template.
 
-collective.recipe.updateplone 
+collective.recipe.updateplone
 -----------------------------
 
 `collective.recipe.updateplone <http://pypi.python.org/pypi/collective.recipe.updateplone/0.3>`_ is a buildout recipe to update plone sites.
 
-collective.recipe.vimproject 
+collective.recipe.vimproject
 ----------------------------
 
 `collective.recipe.vimproject <http://pypi.python.org/pypi/collective.recipe.vimproject/0.3.2>`_ is a buildout recipe to set up a VIM development environment.
@@ -216,10 +216,10 @@ collective.recipe.zcml
 
 `collective.recipe.zcml <http://pypi.python.org/pypi/collective.recipe.zcml/0.1>`_ is a buildout recipe to create zcml slugs. ZCML slug generation to be used separately e.g for repoze based setups.
 
-collective.recipe.zope2cluster 
+collective.recipe.zope2cluster
 ------------------------------
 
-`collective.recipe.zope2cluster <http://pypi.python.org/pypi/collective.recipe.zope2cluster/1.1>`_ is a buildout recipe to create a zope cluster. 
+`collective.recipe.zope2cluster <http://pypi.python.org/pypi/collective.recipe.zope2cluster/1.1>`_ is a buildout recipe to create a zope cluster.
 
 NOTE: This recipe is no longer needed as of zc.buildout 1.4.
 
@@ -236,7 +236,7 @@ collective.transcode.recipe
 gocept.cxoracle
 ---------------
 
-`gocept.cxoracle <http://pypi.python.org/pypi/gocept.cxoracle/0.1.1>`_ is a zc.buildout recipe for installing cx_Oracle. 
+`gocept.cxoracle <http://pypi.python.org/pypi/gocept.cxoracle/0.1.1>`_ is a zc.buildout recipe for installing cx_Oracle.
 
 gocept.download
 ---------------
@@ -318,7 +318,7 @@ plone.recipe.zope2install
 
 `plone.recipe.zope2install <http://pypi.python.org/pypi/plone.recipe.zope2install/3.2>`_ is a zc.buildout recipe for installing Zope 2.
 
-plone.recipe.zope2instance 
+plone.recipe.zope2instance
 --------------------------
 
 `plone.recipe.zope2instance <http://pypi.python.org/pypi/plone.recipe.zope2instance/4.0a4>`_ is a zc.buildout recipe for installing a Zope 2 instance.
@@ -392,3 +392,13 @@ z3c.recipe.usercrontab
 ----------------------
 
 `z3c.recipe.usercrontab <http://pypi.python.org/pypi/z3c.recipe.usercrontab/1.0>`_ is a user Crontab install buildout recipe.
+
+collective.recipe.vscode
+------------------------
+
+`collective.recipe.vscode <https://pypi.org/project/collective.recipe.vscode/0.1.3>`_ is a project specific `Visual Studio Code <https://code.visualstudio.com/>`_ settings generator.
+
+plone.recipe.sublimetext
+------------------------
+
+`plone.recipe.sublimetext https://pypi.org/project/plone.recipe.sublimetext/1.3.0/`_ is a tool for `Sublimetext 3 <https://www.sublimetext.com/3>`_ to generate project specific settings.
